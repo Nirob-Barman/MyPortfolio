@@ -6,13 +6,29 @@ import Skills from "../../Shared/Skills";
 
 const Home = () => {
     return (
-        <div className="my-20">
+        <div>
             <div id="Home">
                 <Introduction />
                 <About />
                 <Skills />
                 <Projects />
-                <Contacts />
+                <div className="pt-20">
+                    <div className="pt-20">
+                        <div className="pt-20">
+                            <div className="pt-20">
+                                <div className="pt-20">
+                                    <div className="pt-20">
+                                        <div className="pt-20">
+                                            <div className="pt-20">
+                                                <Contacts />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
