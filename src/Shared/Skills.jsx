@@ -40,3 +40,25 @@ const Skills = () => {
 };
 
 export default Skills;
+
+
+// import React from 'react';
+
+// const Skills = () => {
+//     return (
+//         <section id="Skills">
+//             <h2 className="text-3xl font-bold mb-4">Skills</h2>
+//             <ul className="list-disc ml-8">
+//                 <li className="animate-bounce">React</li>
+//                 <li className="animate-bounce">JavaScript</li>
+//                 <li className="animate-bounce">HTML</li>
+//                 <li className="animate-bounce">CSS</li>
+//                 <li className="animate-bounce">Node.js</li>
+//                 <li className="animate-bounce">Express.js</li>
+//                 <li className="animate-bounce">MongoDB</li>
+//             </ul>
+//         </section>
+//     );
+// };
+
+// export default Skills;

@@ -374,7 +374,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="flex flex-wrap justify-center">
+        <div id='Projects' className="flex flex-wrap justify-center">
             {projectData.map((project, index) => (
                 <div
                     key={index}

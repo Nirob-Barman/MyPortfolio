@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="bg-white rounded-lg shadow-lg p-8">
+        <section id='About' className="bg-white rounded-lg shadow-lg p-8">
             <h1 className="text-3xl font-bold mb-4">About Me</h1>
             <p className="mb-4">I am a MERN stack developer with a passion for creating efficient and scalable web applications. I have experience in developing full-stack applications using MongoDB, Express.js, React.js, and Node.js.</p>
             <p className="mb-4">Throughout my career, I have worked on various projects, ranging from small personal websites to large enterprise applications. I am comfortable working with both frontend and backend technologies, and I enjoy the challenge of solving complex problems.</p>
