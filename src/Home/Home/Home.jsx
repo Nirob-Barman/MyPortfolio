@@ -12,23 +12,7 @@ const Home = () => {
                 <About />
                 <Skills />
                 <Projects />
-                <div className="pt-20">
-                    <div className="pt-20">
-                        <div className="pt-20">
-                            <div className="pt-20">
-                                <div className="pt-20">
-                                    <div className="pt-20">
-                                        <div className="pt-20">
-                                            <div className="pt-20">
-                                                <Contacts />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Contacts />
             </div>
         </div>
     );
