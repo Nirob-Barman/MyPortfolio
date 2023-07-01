@@ -3,7 +3,7 @@ import React from 'react';
 const Project = () => {
     return (
         <div id='Projects'>
-            <div className='text-center'>
+            <div className='text-center text-xl mb-3'>
                 <h2 className="">Projects</h2>
             </div>
 
@@ -39,9 +39,9 @@ const Project = () => {
 
                     </div>
                     <div className="scrollable-images h-0 overflow-hidden transition-all duration-300 group-hover:h-full">
-                        <img src="../../public/Projects/pi.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/pii.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/piii.png" alt="Project 1" className="w-full" />
+                        <img src="https://i.ibb.co/bJKSnT0/pi.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/CH6rBXq/pii.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/4gNrfhJ/piii.png" alt="Project" className="w-full" />
                     </div>
                 </div>
                 <div className="relative overflow-hidden group">
@@ -75,9 +75,9 @@ const Project = () => {
 
                     </div>
                     <div className="scrollable-images h-0 overflow-hidden transition-all duration-300 group-hover:h-full">
-                        <img src="../../public/Projects/ppi.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/ppii.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/ppiii.png" alt="Project 1" className="w-full" />
+                        <img src="https://i.ibb.co/F46B8tL/ppi.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/YhsZDgB/ppii.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/wrW4qHY/ppiii.png" alt="Project" className="w-full" />
                     </div>
                 </div>
                 <div className="relative overflow-hidden group">
@@ -111,12 +111,11 @@ const Project = () => {
 
                     </div>
                     <div className="scrollable-images h-0 overflow-hidden transition-all duration-300 group-hover:h-full">
-                        <img src="../../public/Projects/pppi.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/pppii.png" alt="Project 1" className="w-full" />
-                        <img src="../../public/Projects/pppiii.png" alt="Project 1" className="w-full" />
+                        <img src="https://i.ibb.co/QbCFpHn/pppi.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/6YtYV8P/pppii.png" alt="Project" className="w-full" />
+                        <img src="https://i.ibb.co/G28CSyt/pppiii.png" alt="Project" className="w-full" />
                     </div>
                 </div>
-
 
                 {/* Repeat the above structure for Project 2 and Project 3 */}
 
@@ -128,4 +127,15 @@ const Project = () => {
 
 export default Project;
 
-
+{/* {
+    https://i.ibb.co/YhsZDgB/ppii.png
+    https://i.ibb.co/wrW4qHY/ppiii.png
+    https://i.ibb.co/QbCFpHn/pppi.png
+    https://i.ibb.co/6YtYV8P/pppii.png
+    https://i.ibb.co/G28CSyt/pppiii.png
+    https://i.ibb.co/bJKSnT0/pi.png
+    https://i.ibb.co/CH6rBXq/pii.png
+    https://i.ibb.co/4gNrfhJ/piii.png
+    https://i.ibb.co/F46B8tL/ppi.png
+    } 
+*/}

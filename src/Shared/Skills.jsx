@@ -26,7 +26,7 @@ const Skills = () => {
 
     return (
         <div id='Skills' className="my-4">
-            <h4 className="text-center mb-3">Skills</h4>
+            <h4 className="text-center mb-3 text-xl">Skills</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
                 {skills.map((skill, index) => (
                     <div key={index} className="flex flex-col items-center justify-center transform transition duration-500 hover:scale-105">
@@ -41,24 +41,3 @@ const Skills = () => {
 
 export default Skills;
 
-
-// import React from 'react';
-
-// const Skills = () => {
-//     return (
-//         <section id="Skills">
-//             <h2 className="text-3xl font-bold mb-4">Skills</h2>
-//             <ul className="list-disc ml-8">
-//                 <li className="animate-bounce">React</li>
-//                 <li className="animate-bounce">JavaScript</li>
-//                 <li className="animate-bounce">HTML</li>
-//                 <li className="animate-bounce">CSS</li>
-//                 <li className="animate-bounce">Node.js</li>
-//                 <li className="animate-bounce">Express.js</li>
-//                 <li className="animate-bounce">MongoDB</li>
-//             </ul>
-//         </section>
-//     );
-// };
-
-// export default Skills;
