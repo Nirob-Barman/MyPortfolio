@@ -6,8 +6,9 @@ import Skills from "../../Shared/Skills";
 
 const Home = () => {
     return (
-        <div className="bg-gradient-to-r from-pink-500 to-purple-500">
-            <div id="Home" className="bg-white bg-opacity-50 p-8">
+        <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            {/* <div id="Home" className="bg-white bg-opacity-50 p-8"> */}
+            <div id="Home" className="bg-white bg-opacity-90 rounded-lg shadow-lg p-8">
                 <Introduction />
                 <About />
                 <Skills />
