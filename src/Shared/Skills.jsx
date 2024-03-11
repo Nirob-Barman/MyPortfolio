@@ -1,6 +1,6 @@
 import React from 'react';
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase } from 'react-icons/si';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiPython } from 'react-icons/di';
+import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiDjango, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender } from 'react-icons/si';
 
 const Skills = () => {
     const skills = [
@@ -17,10 +17,16 @@ const Skills = () => {
         { name: 'C', icon: DiCode },
         { name: 'C++', icon: DiCode },
         { name: 'Java', icon: DiJava },
-        { name: 'Figma', icon: SiFigma },
+        { name: 'Python', icon: DiPython },
+        { name: 'Django', icon: SiDjango },
+        { name: 'VS Code', icon: SiVisualstudiocode },
+        { name: 'GitHub', icon: SiGithub },
+        { name: 'Chrome DevTools', icon: SiGooglechrome },
+        { name: 'Render', icon: SiRender },
         { name: 'Vercel', icon: SiVercel },
         { name: 'Netlify', icon: SiNetlify },
         { name: 'Firebase', icon: SiFirebase },
+        { name: 'Figma', icon: SiFigma },
         { name: 'MERN', icon: DiMongodb },
     ];
 
