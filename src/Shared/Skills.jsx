@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiPython } from 'react-icons/di';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiPython, DiCodeBadge } from 'react-icons/di';
 import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiDjango, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender } from 'react-icons/si';
 
 const Skills = () => {
@@ -28,6 +28,8 @@ const Skills = () => {
         { name: 'Firebase', icon: SiFirebase },
         { name: 'Figma', icon: SiFigma },
         { name: 'MERN', icon: DiMongodb },
+        { name: 'Data Structures & Algorithms', icon: DiCodeBadge },
+        { name: 'OOP', icon: DiCode },
     ];
 
     return (
