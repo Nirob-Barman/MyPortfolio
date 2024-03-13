@@ -29,10 +29,10 @@ const Project = () => {
                             <a href="https://summer-camp-school-b1cb7.web.app/" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Visit Website
                             </a>
-                            <a href="https://github.com/Nirob-Barman/summer-camp-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/summer-camp-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Server
                             </a>
-                            <a href="https://github.com/Nirob-Barman/summer-camp-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/summer-camp-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Client
                             </a>
                         </div>
@@ -65,10 +65,10 @@ const Project = () => {
                             <a href="https://toy-marketplace-5c0d6.firebaseapp.com/" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Visit Website
                             </a>
-                            <a href="https://github.com/Nirob-Barman/toy-marketplace-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/toy-marketplace-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Server
                             </a>
-                            <a href="https://github.com/Nirob-Barman/toy-marketplace-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/toy-marketplace-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Client
                             </a>
                         </div>
@@ -101,10 +101,10 @@ const Project = () => {
                             <a href="https://chef-recipe-hunting-a4314.web.app/" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Visit Website
                             </a>
-                            <a href="https://github.com/Nirob-Barman/chef-recipe-hunter-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/chef-recipe-hunter-server" target="_blank" rel="noopener noreferrer" className="mr-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Server
                             </a>
-                            <a href="https://github.com/Nirob-Barman/chef-recipe-hunter-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
+                            <a href="https://github.com/rsnirob/chef-recipe-hunter-client" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
                                 Client
                             </a>
                         </div>
