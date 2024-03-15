@@ -1,11 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography, Box, Button } from '@mui/material';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 import profileImage from '../../public/profile.jpg';
 
 const Introduction = () => {
+
+    const [jobTitles, setJobTitles] = useState([
+        "Full Stack Developer",
+        "MERN Stack Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Software Developer",
+        "Django Developer",
+        "Python Developer",
+        "Web Developer",
+    ]);
+    const [index, setIndex] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIsVisible(false);
+            setTimeout(() => {
+                setIndex(prevIndex => (prevIndex + 1) % jobTitles.length);
+                setIsVisible(true);
+            }, 500);
+        }, 2000); // Change this value to adjust the interval between job titles
+
+        return () => clearInterval(timer);
+    }, [index]);
+
+
     return (
         <div>
             <div id="Introduction" className="flex justify-center">
@@ -26,7 +53,9 @@ const Introduction = () => {
                                 </motion.span>
                             </Typography>
                             <Typography variant="h6" component="h2" gutterBottom>
-                                MERN Stack Developer
+                                <motion.p animate={{ opacity: isVisible ? 1 : 0 }} transition={{ duration: 1 }}>
+                                    {jobTitles[index]}
+                                </motion.p>
                             </Typography>
                         </Box>
                     </Box>
