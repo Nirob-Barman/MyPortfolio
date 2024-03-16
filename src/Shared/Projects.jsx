@@ -1,10 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = () => {
     return (
         <div id='Projects'>
             <div className='text-center text-xl mb-3'>
                 <h2 className="">Projects</h2>
+            </div>
+            <div className='text-center text-xl mb-3'>
+                <h2 className="">All Projects are
+                    <span><Link to="/projects"> here</Link></span>
+                </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -25,7 +25,14 @@ const NavBar = () => {
                         Nirob Barman
                     </Link>
                 </div>
+
                 <div className="hidden md:flex items-center space-x-4">
+                    <Link to="/" className="text-xl font-bold">
+                        Home
+                    </Link>
+                    <Link to="/projects" className="text-xl font-bold">
+                        All Projects
+                    </Link>
                     <a href="#Introduction">Introduction</a>
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
