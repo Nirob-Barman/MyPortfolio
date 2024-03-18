@@ -60,14 +60,14 @@ const NavBar = () => {
                 </div>
                 <div className="flex items-center space-x-4">
                     <a
-                        href="https://github.com/rsnirob"
+                        href="https://github.com/Nirob-Barman"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FaGithub className="text-xl hover:text-gray-300" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/nirob-barman-a1b120147/"
+                        href="https://www.linkedin.com/in/nirob-barman/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
