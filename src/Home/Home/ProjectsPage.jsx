@@ -4,6 +4,24 @@ const ProjectsPage = () => {
     const projectsData = {
         "projects": [
             {
+                "name": "Social Canvas",
+                "links": {
+                    "website": "https://social-canvas-3b50e.web.app/",
+                    "server": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/SocialCanvas/",
+                    "client": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/Social-Canvas-Client/"
+                },
+                "features": [
+                    "Safely handle user authentication, registration, and more for enhanced account security.",
+                    "Efficiently explore recent posts with seamless interaction for likes and dislikes.",
+                    "Efficiently navigate top liked and top commented posts, interact with likes, and engage in discussions."
+                ],
+                "images": [
+                    "https://i.ibb.co/n3xbXxn/image.png",
+                    "https://i.ibb.co/5jyx2fJ/image.png",
+                    "https://i.ibb.co/kB7XHzs/image.png"
+                ]
+            },
+            {
                 "name": "Grow Green",
                 "links": {
                     "website": "https://grow-green-aa1e1.web.app/",
@@ -14,6 +32,11 @@ const ProjectsPage = () => {
                     "Role-based access control, allowing administrators to manage roles for users.",
                     "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
                     "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue."
+                ],
+                "images": [
+                    "https://i.ibb.co/2h8CynF/image.png",
+                    "https://i.ibb.co/4dtjQm2/image.png",
+                    "https://i.ibb.co/pKXj4PF/image.png"
                 ]
             },
             {
@@ -27,6 +50,11 @@ const ProjectsPage = () => {
                     "Full stack web development supporting admin, instructor, and student roles.",
                     "Admin manages course approval, feedback, and empowers instructors administratively.",
                     "Students have access to enroll in and view their selected and enrolled classes."
+                ],
+                "images": [
+                    "https://i.ibb.co/bJKSnT0/pi.png",
+                    "https://i.ibb.co/CH6rBXq/pii.png",
+                    "https://i.ibb.co/4gNrfhJ/piii.png"
                 ]
             },
             {
@@ -40,6 +68,11 @@ const ProjectsPage = () => {
                     "Customers can browse and buy a wide variety of toy cars online.",
                     "Sellers can list their toys on the marketplace for sale.",
                     "Administrators have the ability to view, edit, and delete marketplace toys."
+                ],
+                "images": [
+                    "https://i.ibb.co/F46B8tL/ppi.png",
+                    "https://i.ibb.co/YhsZDgB/ppii.png",
+                    "https://i.ibb.co/wrW4qHY/ppiii.png"
                 ]
             },
             {
@@ -53,6 +86,11 @@ const ProjectsPage = () => {
                     "The website provides a wide range of recipes from well-known chefs.",
                     "Platform facilitating exploration, sharing, and learning about diverse foods and recipes.",
                     "Users can explore and try out the most exquisite recipes from featured chefs."
+                ],
+                "images": [
+                    "https://i.ibb.co/QbCFpHn/pppi.png",
+                    "https://i.ibb.co/6YtYV8P/pppii.png",
+                    "https://i.ibb.co/G28CSyt/pppiii.png"
                 ]
             }
         ]
