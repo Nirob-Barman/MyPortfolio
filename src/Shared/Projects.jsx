@@ -8,6 +8,7 @@ const Project = () => {
             "name": "EliteSportsAcademy",
             "description": "Full stack web development supporting admin, instructor, and student roles.",
             "features": [
+                "Full stack web development supporting admin, instructor, and student roles.",
                 "Admin manages course approval, feedback, and empowers instructors administratively.",
                 "Students have access to enroll in and view their selected and enrolled classes."
             ],
@@ -26,6 +27,7 @@ const Project = () => {
             "name": "ToyVerse",
             "description": "Customers can browse and buy a wide variety of toy cars online.",
             "features": [
+                "Customers can browse and buy a wide variety of toy cars online.",
                 "Sellers can list their toys on the marketplace for sale.",
                 "Administrators have the ability to view, edit, and delete marketplace toys."
             ],
@@ -44,6 +46,7 @@ const Project = () => {
             "name": "Delicious Seeds",
             "description": "The website provides a wide range of recipes from well-known chefs.",
             "features": [
+                "The website provides a wide range of recipes from well-known chefs.",
                 "Platform facilitating exploration, sharing, and learning about diverse foods and recipes.",
                 "Users can explore and try out the most exquisite recipes from featured chefs."
             ],
