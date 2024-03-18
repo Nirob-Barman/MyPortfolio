@@ -6,16 +6,16 @@ const Project = () => {
     const projectsData = [
         {
             "name": "Social Canvas",
+            "links": {
+                "website": "https://social-canvas-3b50e.web.app/",
+                "server": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/SocialCanvas/",
+                "client": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/Social-Canvas-Client/"
+            },
             "features": [
                 "Safely handle user authentication, registration, and more for enhanced account security.",
                 "Efficiently explore recent posts with seamless interaction for likes and dislikes.",
                 "Efficiently navigate top liked and top commented posts, interact with likes, and engage in discussions."
             ],
-            "links": {
-                "website": "https://toy-marketplace-5c0d6.firebaseapp.com/",
-                "server": "https://github.com/rsnirob/toy-marketplace-server",
-                "client": "https://github.com/rsnirob/toy-marketplace-client"
-            },
             "images": [
                 "https://i.ibb.co/n3xbXxn/image.png",
                 "https://i.ibb.co/5jyx2fJ/image.png",
@@ -24,17 +24,16 @@ const Project = () => {
         },
         {
             "name": "EliteSportsAcademy",
-            "description": "Full stack web development supporting admin, instructor, and student roles.",
+            "links": {
+                "website": "https://summer-camp-school-b1cb7.web.app/",
+                "server": "https://github.com/Nirob-Barman/summer-camp-server",
+                "client": "https://github.com/Nirob-Barman/summer-camp-client"
+            },
             "features": [
                 "Full stack web development supporting admin, instructor, and student roles.",
                 "Admin manages course approval, feedback, and empowers instructors administratively.",
                 "Students have access to enroll in and view their selected and enrolled classes."
             ],
-            "links": {
-                "website": "https://social-canvas-3b50e.web.app/",
-                "server": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/SocialCanvas/",
-                "client": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/Social-Canvas-Client/"
-            },
             "images": [
                 "https://i.ibb.co/bJKSnT0/pi.png",
                 "https://i.ibb.co/CH6rBXq/pii.png",

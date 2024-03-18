@@ -43,8 +43,8 @@ const ProjectsPage = () => {
                 "name": "EliteSportsAcademy",
                 "links": {
                     "website": "https://summer-camp-school-b1cb7.web.app/",
-                    "server": "https://github.com/rsnirob/summer-camp-server",
-                    "client": "https://github.com/rsnirob/summer-camp-client"
+                    "server": "https://github.com/Nirob-Barman/summer-camp-server",
+                    "client": "https://github.com/Nirob-Barman/summer-camp-client"
                 },
                 "features": [
                     "Full stack web development supporting admin, instructor, and student roles.",
@@ -61,8 +61,8 @@ const ProjectsPage = () => {
                 "name": "ToyVerse",
                 "links": {
                     "website": "https://toy-marketplace-5c0d6.firebaseapp.com/",
-                    "server": "https://github.com/rsnirob/toy-marketplace-server",
-                    "client": "https://github.com/rsnirob/toy-marketplace-client"
+                    "server": "https://github.com/Nirob-Barman/toy-marketplace-server",
+                    "client": "https://github.com/Nirob-Barman/toy-marketplace-client"
                 },
                 "features": [
                     "Customers can browse and buy a wide variety of toy cars online.",
@@ -79,8 +79,8 @@ const ProjectsPage = () => {
                 "name": "Delicious Seeds",
                 "links": {
                     "website": "https://chef-recipe-hunting-a4314.web.app/",
-                    "server": "https://github.com/rsnirob/chef-recipe-hunter-server",
-                    "client": "https://github.com/rsnirob/chef-recipe-hunter-client"
+                    "server": "https://github.com/Nirob-Barman/chef-recipe-hunter-server",
+                    "client": "https://github.com/Nirob-Barman/chef-recipe-hunter-client"
                 },
                 "features": [
                     "The website provides a wide range of recipes from well-known chefs.",
