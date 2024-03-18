@@ -74,7 +74,7 @@ const NavBar = () => {
                         <FaLinkedin className="text-xl hover:text-gray-300" />
                     </a>
                     <a
-                        href="https://www.facebook.com/nirob.barman.52/"
+                        href="https://www.facebook.com/nirob.barman.19/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
