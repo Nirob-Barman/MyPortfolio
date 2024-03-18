@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contacts = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const formRef = useRef(null);
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -12,6 +15,8 @@ const Contacts = () => {
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
     };
+
+
 
     const handleMessageChange = (e) => {
         setMessage(e.target.value);
@@ -24,10 +29,39 @@ const Contacts = () => {
         console.log('Name:', name);
         console.log('Email:', email);
         console.log('Message:', message);
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Your message has been sent successfully.',
+        });
+
         // Reset form fields
         setName('');
         setEmail('');
         setMessage('');
+
+        // Using emailjs.sendForm to send the form data
+        // emailjs.sendForm('service_8baiizn', 'template_uej5vcg', formRef.current, 'xLitHCPjqiRQz07Om')
+        //     .then((result) => {
+        //         if (result.text === 'OK') {
+        //             console.log('Message sent successfully');
+        //             // Reset form fields
+        //             setName('');
+        //             setEmail('');
+        //             setMessage('');
+        //             // Reset the form after submission
+        //             e.target.reset();
+
+        //             Swal.fire({
+        //                 icon: 'success',
+        //                 title: 'Success!',
+        //                 text: 'Your message has been sent successfully.',
+        //             });
+        //         }
+        //     }, (error) => {
+        //         console.log('Error:', error);
+        //     });
     };
 
     return (
