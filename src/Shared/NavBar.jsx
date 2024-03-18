@@ -1,11 +1,13 @@
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import { AiOutlineDownload } from 'react-icons/ai';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const location = useLocation();
 
     const handleDownload = () => {
         window.open(
@@ -22,22 +24,33 @@ const NavBar = () => {
             <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-10">
                 <div>
                     <Link to="/" className="text-2xl font-bold">
-                        Nirob Barman
+                        Home
                     </Link>
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <Link to="/" className="text-xl font-bold">
+                    {/* <Link to="/" className="text-xl font-bold">
                         Home
-                    </Link>
-                    <Link to="/projects" className="text-xl font-bold">
-                        All Projects
-                    </Link>
-                    <a href="#Introduction">Introduction</a>
+                    </Link> */}
+                    
+                    {/* <a href="#Introduction">Introduction</a>
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
                     <a href="#Projects">Projects</a>
-                    <a href="#Contacts">Contact</a>
+                    <a href="#Contacts">Contact</a> */}
+
+                    {location.pathname === "/" && (
+                        <>
+                            <Link to="/projects" className="text-xl font-bold">
+                                All Projects
+                            </Link>
+                            <a href="#Introduction">Introduction</a>
+                            <a href="#About">About</a>
+                            <a href="#Skills">Skills</a>
+                            <a href="#Projects">Projects</a>
+                            <a href="#Contacts">Contact</a>
+                        </>
+                    )}
                     <button
                         onClick={handleDownload}
                         className="flex items-center text-white hover:text-gray-300"
