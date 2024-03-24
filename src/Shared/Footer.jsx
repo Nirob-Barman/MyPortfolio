@@ -6,7 +6,7 @@ const Footer = () => {
             <p className="text-gray-500">
                 &copy; {new Date().getFullYear()} Nirob Barman
             </p>
-            <p className="text-gray-500">MERN Stack Developer</p>
+            <p className="text-gray-500">Full Stack Developer</p>
         </footer>
     );
 };
