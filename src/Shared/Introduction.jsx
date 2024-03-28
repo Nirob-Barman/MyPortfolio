@@ -15,6 +15,7 @@ const Introduction = () => {
         "Software Developer",
         "Django Developer",
         "Python Developer",
+        "Django Developer",
         "Web Developer",
     ]);
     const [index, setIndex] = useState(0);
