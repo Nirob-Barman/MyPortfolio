@@ -40,19 +40,19 @@ const Contact = () => {
                         <div className="flex items-center">
                             <RiGithubFill className="w-5 h-5 mr-2 sm:mr-6" />
                             <a href="https://github.com/Nirob-Barman" target="_blank" rel="noreferrer">
-                                github
+                                Github
                             </a>
                         </div>
                         <div className="flex items-center">
                             <RiLinkedinBoxFill className="w-5 h-5 mr-2 sm:mr-6" />
                             <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noreferrer">
-                                linkedin
+                                Linkedin
                             </a>
                         </div>
                         <div className="flex items-center">
                             <RiFacebookFill className="w-5 h-5 mr-2 sm:mr-6" />
                             <a href="https://www.facebook.com/nirob.barman.19/" target="_blank" rel="noreferrer">
-                                facebook
+                                Facebook
                             </a>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 import About from "../../Shared/About";
-import Contacts from "../../Shared/Contacts";
+// import Contacts from "../../Shared/Contacts";
 import Introduction from "../../Shared/Introduction";
 import Projects from "../../Shared/Projects";
 import Skills from "../../Shared/Skills";
