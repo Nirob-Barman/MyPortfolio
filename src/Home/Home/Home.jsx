@@ -3,6 +3,7 @@ import Contacts from "../../Shared/Contacts";
 import Introduction from "../../Shared/Introduction";
 import Projects from "../../Shared/Projects";
 import Skills from "../../Shared/Skills";
+import Contact from "../../Shared/contact";
 
 const Home = () => {
     return (
@@ -13,7 +14,8 @@ const Home = () => {
                 <About />
                 <Skills />
                 <Projects />
-                <Contacts />
+                <Contact />
+                {/* <Contacts /> */}
             </div>
         </div>
     );
