@@ -23,6 +23,24 @@ const Project = () => {
             ]
         },
         {
+            "name": "Grow Green",
+            "features": [
+                "Role-based access control, allowing administrators to manage roles for users.",
+                "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
+                "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue."
+            ],
+            "links": {
+                "website": "https://grow-green-aa1e1.web.app/",
+                "server": "https://github.com/Nirob-Barman/Grow-Green/tree/main/Grow-Green-Server",
+                "client": "https://github.com/Nirob-Barman/Grow-Green/tree/main/Grow-Green-Client"
+            },
+            "images": [
+                "https://i.ibb.co/2h8CynF/image.png",
+                "https://i.ibb.co/4dtjQm2/image.png",
+                "https://i.ibb.co/pKXj4PF/image.png"
+            ]
+        },
+        {
             "name": "EliteSportsAcademy",
             "links": {
                 "website": "https://summer-camp-school-b1cb7.web.app/",
@@ -40,24 +58,6 @@ const Project = () => {
                 "https://i.ibb.co/4gNrfhJ/piii.png"
             ]
         },
-        {
-            "name": "Grow Green",
-            "features": [
-                "Role-based access control, allowing administrators to manage roles for users.",
-                "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
-                "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue."
-            ],
-            "links": {
-                "website": "https://grow-green-aa1e1.web.app/",
-                "server": "https://github.com/Nirob-Barman/Grow-Green/tree/main/Grow-Green-Server",
-                "client": "https://github.com/Nirob-Barman/Grow-Green/tree/main/Grow-Green-Client"
-            },
-            "images": [
-                "https://i.ibb.co/2h8CynF/image.png",
-                "https://i.ibb.co/4dtjQm2/image.png",
-                "https://i.ibb.co/pKXj4PF/image.png"
-            ]
-        }
     ]
 
     return (
