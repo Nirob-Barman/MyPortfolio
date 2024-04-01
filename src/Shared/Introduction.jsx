@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 import profileImage from '../../public/profile.jpg';
+import Typewriter from "typewriter-effect";
 
 const Introduction = () => {
 
@@ -47,7 +48,7 @@ const Introduction = () => {
                             transition={{ duration: 1 }}
                             style={{ width: 200, height: 200, borderRadius: '50%' }}
                         />
-                        <Box ml={4}>
+                        {/* <Box ml={4}>
                             <Typography variant="h4" component="h1" gutterBottom>
                                 Hi, I'm <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
                                     Nirob Barman
@@ -58,7 +59,48 @@ const Introduction = () => {
                                     {jobTitles[index]}
                                 </motion.p>
                             </Typography>
+                        </Box> */}
+
+                        <Box ml={4}>
+                            <Typography variant="h4" component="h1" gutterBottom>
+                                Hi, I'm <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+                                    Nirob Barman
+                                </motion.span>
+                            </Typography>
+                            <Typography variant="h6" component="h2" gutterBottom>
+                                <Typewriter
+                                    options={{
+                                        strings: [
+                                            "Full Stack Developer",
+                                            "MERN Stack Developer",
+                                            "Frontend Developer",
+                                            "Backend Developer",
+                                            "Software Developer",
+                                            "Django Developer",
+                                            "Python Developer",
+                                            "Django Developer",
+                                            "Web Developer",
+                                        ],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
+                            </Typography>
                         </Box>
+
+                        {/* <Box>
+                            <Typewriter
+                                options={{
+                                    strings: [
+                                        "Front-end Developer",
+                                        "Web Developer",
+                                        "Mern Stack Developer",
+                                    ],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </Box> */}
                     </Box>
 
                     <Typography variant="body1" paragraph>

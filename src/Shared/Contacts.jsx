@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
 const Contacts = () => {
@@ -11,7 +11,7 @@ const Contacts = () => {
     const handleNameChange = (e) => {
         setName(e.target.value);
     };
-
+    
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
     };

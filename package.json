@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.6",
@@ -27,7 +26,8 @@
     "react-spring": "^9.7.2",
     "reactstrap": "^9.2.2",
     "sort-by": "^1.2.0",
-    "sweetalert2": "^11.10.6"
+    "sweetalert2": "^11.10.6",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
