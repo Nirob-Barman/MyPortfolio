@@ -1,4 +1,5 @@
 import About from "../../Shared/About";
+import Header from "../../Shared/Header";
 // import Contacts from "../../Shared/Contacts";
 import Introduction from "../../Shared/Introduction";
 import Projects from "../../Shared/Projects";
