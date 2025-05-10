@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import profileImage from '../../public/profile.jpg';
 import Typewriter from 'typewriter-effect';
 
 const Introduction = () => {
     return (
-        <div className="flex justify-center px-4">
+        <div id="Introduction" className="flex justify-center px-4">
             <div className="max-w-xl mt-12">
                 <div className="flex items-center mb-4">
                     <motion.img
