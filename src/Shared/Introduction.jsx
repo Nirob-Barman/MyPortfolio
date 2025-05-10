@@ -9,14 +9,15 @@ import Typewriter from "typewriter-effect";
 const Introduction = () => {
 
     const [jobTitles, setJobTitles] = useState([
+        "Software Engineer",
         "Full Stack Developer",
-        "MERN Stack Developer",
+        // "MERN Stack Developer",
         "Frontend Developer",
         "Backend Developer",
         "Software Developer",
-        "Django Developer",
-        "Python Developer",
-        "Django Developer",
+        // "Django Developer",
+        // "Python Developer",
+        // "Django Developer",
         "Web Developer",
     ]);
     const [index, setIndex] = useState(0);
@@ -104,6 +105,15 @@ const Introduction = () => {
                     </Box>
 
                     <Typography variant="body1" paragraph>
+                        I'm a software engineer with a primary focus on .NET technologies, including ASP.NET Core and ASP.NET MVC. I have experience building scalable and maintainable web applications, leveraging Clean Architecture and integrating databases like MSSQL, MySQL, and MongoDB. My skill set spans C#, JavaScript, React.js, and modern front-end technologies like Tailwind CSS and Bootstrap.
+                    </Typography>
+
+                    <Typography variant="body1" paragraph>
+                        With a strong foundation in software design, OOP, data structures, and algorithms, I strive to deliver high-quality, user-friendly software solutions. I'm passionate about continuous learning and enjoy working in collaborative environments to solve complex challenges.
+                    </Typography>
+
+
+                    {/* <Typography variant="body1" paragraph>
                         I'm a passionate MERN stack developer with expertise in building scalable and responsive web applications. I have
                         a strong foundation in MongoDB, Express.js, React.js, and Node.js (MERN) stack. With a keen eye for design and a
                         love for clean code, I strive to create visually appealing and user-friendly experiences.
@@ -112,7 +122,7 @@ const Introduction = () => {
                     <Typography variant="body1" paragraph>
                         My goal is to leverage my skills and knowledge to contribute to the development of innovative and impactful
                         projects. I enjoy working in collaborative environments and am always excited to take on new challenges.
-                    </Typography>
+                    </Typography> */}
 
                     <Box display="flex" justifyContent="center">
                         {/* <Button variant="contained" color="primary">

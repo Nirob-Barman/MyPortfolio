@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaMedium } from 'react-icons/fa';
 import { AiOutlineDownload } from 'react-icons/ai';
 
 const NavBar = () => {
@@ -33,7 +32,7 @@ const NavBar = () => {
                     {/* <Link to="/" className="text-xl font-bold">
                         Home
                     </Link> */}
-                    
+
                     {/* <a href="#Introduction">Introduction</a>
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
@@ -74,12 +73,20 @@ const NavBar = () => {
                     >
                         <FaLinkedin className="text-xl hover:text-gray-300" />
                     </a>
-                    <a
+                    {/* <a
                         href="https://www.facebook.com/nirob.barman.19/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FaFacebook className="text-xl hover:text-gray-300" />
+                    </a> */}
+                    <a
+                        href="https://medium.com/@nirob-barman"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xl hover:text-gray-300"
+                    >
+                        <FaMedium />
                     </a>
                 </div>
                 <div className="md:hidden">

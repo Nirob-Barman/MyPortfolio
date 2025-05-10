@@ -1,9 +1,12 @@
-import React from 'react';
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiPython, DiCodeBadge } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiDjango, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender } from 'react-icons/si';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiCodeBadge, DiMsqlServer } from 'react-icons/di';
+import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql } from 'react-icons/si';
 
 const Skills = () => {
     const skills = [
+        { name: 'C#', icon: SiCsharp },
+        { name: '.NET', icon: SiDotnet },
+        { name: 'ASP.NET MVC', icon: SiDotnet },
+        { name: 'ASP.NET Core', icon: SiDotnet },
         { name: 'HTML', icon: DiHtml5 },
         { name: 'CSS', icon: DiCss3 },
         { name: 'JavaScript', icon: DiJavascript1 },
@@ -12,13 +15,16 @@ const Skills = () => {
         { name: 'Node.js', icon: DiNodejsSmall },
         { name: 'MongoDB', icon: DiMongodb },
         { name: 'Express.js', icon: SiExpress },
+        { name: 'MongoDB', icon: DiMongodb },
+        { name: 'MSSQL', icon: DiMsqlServer },
+        { name: 'MySQL', icon: SiMysql },
         { name: 'Tailwind CSS', icon: SiTailwindcss },
         { name: 'Bootstrap', icon: DiBootstrap },
         { name: 'C', icon: DiCode },
         { name: 'C++', icon: DiCode },
         { name: 'Java', icon: DiJava },
-        { name: 'Python', icon: DiPython },
-        { name: 'Django', icon: SiDjango },
+        // { name: 'Python', icon: DiPython },
+        // { name: 'Django', icon: SiDjango },
         { name: 'VS Code', icon: SiVisualstudiocode },
         { name: 'GitHub', icon: SiGithub },
         { name: 'Chrome DevTools', icon: SiGooglechrome },
