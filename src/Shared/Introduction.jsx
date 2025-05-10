@@ -1,151 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import { Typography, Box, Button } from '@mui/material';
-import { motion, useAnimation } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import profileImage from '../../public/profile.jpg';
-import Typewriter from "typewriter-effect";
+import Typewriter from 'typewriter-effect';
 
 const Introduction = () => {
-
-    const [jobTitles, setJobTitles] = useState([
-        "Software Engineer",
-        "Full Stack Developer",
-        // "MERN Stack Developer",
-        "Frontend Developer",
-        "Backend Developer",
-        "Software Developer",
-        // "Django Developer",
-        // "Python Developer",
-        // "Django Developer",
-        "Web Developer",
-    ]);
-    const [index, setIndex] = useState(0);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIsVisible(false);
-            setTimeout(() => {
-                setIndex(prevIndex => (prevIndex + 1) % jobTitles.length);
-                setIsVisible(true);
-            }, 500);
-        }, 2000); // Change this value to adjust the interval between job titles
-
-        return () => clearInterval(timer);
-    }, [index]);
-
-
     return (
-        <div>
-            <div id="Introduction" className="flex justify-center">
-                <Box maxWidth={600} mt={12}>
-                    <Box display="flex" alignItems="center" mb={4}>
-                        <motion.img
-                            src={profileImage}
-                            alt="Developer"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 1 }}
-                            style={{ width: 200, height: 200, borderRadius: '50%' }}
-                        />
-                        {/* <Box ml={4}>
-                            <Typography variant="h4" component="h1" gutterBottom>
-                                Hi, I'm <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-                                    Nirob Barman
-                                </motion.span>
-                            </Typography>
-                            <Typography variant="h6" component="h2" gutterBottom>
-                                <motion.p animate={{ opacity: isVisible ? 1 : 0 }} transition={{ duration: 1 }}>
-                                    {jobTitles[index]}
-                                </motion.p>
-                            </Typography>
-                        </Box> */}
+        <div className="flex justify-center px-4">
+            <div className="max-w-xl mt-12">
+                <div className="flex items-center mb-4">
+                    <motion.img
+                        src={profileImage}
+                        alt="Developer"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className="w-48 h-48 rounded-full"
+                    />
 
-                        <Box ml={4}>
-                            <Typography variant="h4" component="h1" gutterBottom>
-                                Hi, I'm <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-                                    Nirob Barman
-                                </motion.span>
-                            </Typography>
-                            <Typography variant="h6" component="h2" gutterBottom>
-                                <Typewriter
-                                    options={{
-                                        strings: [
-                                            "Full Stack Developer",
-                                            "MERN Stack Developer",
-                                            "Frontend Developer",
-                                            "Backend Developer",
-                                            "Software Developer",
-                                            "Django Developer",
-                                            "Python Developer",
-                                            "Django Developer",
-                                            "Web Developer",
-                                        ],
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
-                            </Typography>
-                        </Box>
-
-                        {/* <Box>
+                    <div className="ml-6">
+                        <h1 className="text-3xl font-bold mb-2">
+                            Hi, I'm <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+                                Nirob Barman
+                            </motion.span>
+                        </h1>
+                        <h2 className="text-xl text-gray-600">
                             <Typewriter
                                 options={{
                                     strings: [
-                                        "Front-end Developer",
+                                        "Software Engineer",
+                                        "Full Stack Developer",
                                         "Web Developer",
-                                        "Mern Stack Developer",
+                                        ".NET Enthusiast"
                                     ],
                                     autoStart: true,
                                     loop: true,
                                 }}
                             />
-                        </Box> */}
-                    </Box>
+                        </h2>
+                    </div>
+                </div>
 
-                    <Typography variant="body1" paragraph>
-                        I'm a software engineer with a primary focus on .NET technologies, including ASP.NET Core and ASP.NET MVC. I have experience building scalable and maintainable web applications, leveraging Clean Architecture and integrating databases like MSSQL, MySQL, and MongoDB. My skill set spans C#, JavaScript, React.js, and modern front-end technologies like Tailwind CSS and Bootstrap.
-                    </Typography>
+                <p className="text-base text-gray-700 mb-4">
+                    I'm a software engineer focused on .NET technologies, including ASP.NET Core and ASP.NET MVC. I build scalable, maintainable applications using Clean Architecture.
+                </p>
 
-                    <Typography variant="body1" paragraph>
-                        With a strong foundation in software design, OOP, data structures, and algorithms, I strive to deliver high-quality, user-friendly software solutions. I'm passionate about continuous learning and enjoy working in collaborative environments to solve complex challenges.
-                    </Typography>
-
-
-                    {/* <Typography variant="body1" paragraph>
-                        I'm a passionate MERN stack developer with expertise in building scalable and responsive web applications. I have
-                        a strong foundation in MongoDB, Express.js, React.js, and Node.js (MERN) stack. With a keen eye for design and a
-                        love for clean code, I strive to create visually appealing and user-friendly experiences.
-                    </Typography>
-
-                    <Typography variant="body1" paragraph>
-                        My goal is to leverage my skills and knowledge to contribute to the development of innovative and impactful
-                        projects. I enjoy working in collaborative environments and am always excited to take on new challenges.
-                    </Typography> */}
-
-                    <Box display="flex" justifyContent="center">
-                        {/* <Button variant="contained" color="primary">
-                        <Link to="/contact">Contact Me</Link>
-                    </Button> */}
-                    </Box>
-
-                    {/* <Box display="flex" justifyContent="center" mt={4}>
-                    <a href="https://www.linkedin.com/in/nirob-barman-a1b120147/" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin size={30} style={{ marginRight: 10 }} />
-                    </a>
-                    <a href="https://github.com/rsnirob" target="_blank" rel="noopener noreferrer">
-                        <FaGithub size={30} style={{ marginRight: 10 }} />
-                    </a>
-                    <a href="https://www.facebook.com/nirob.barman.52/" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook size={30} />
-                    </a>
-                </Box> */}
-                </Box>
+                <p className="text-base text-gray-700 mb-6">
+                    I enjoy working with C#, JavaScript, React.js, Tailwind CSS, and modern front-end frameworks. Passionate about problem-solving and continuous learning.
+                </p>
             </div>
         </div>
     );
 };
 
 export default Introduction;
-
