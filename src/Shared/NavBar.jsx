@@ -53,13 +53,13 @@ const NavBar = () => {
                             <a href="#Projects">Projects</a>
                             <a href="#Contacts">Contact</a>
                             <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                                GitHub
+                                <FaGithub />
                             </a>
                             <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                                LinkedIn
+                                <FaLinkedin />
                             </a>
                             <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
-                                Medium
+                                <FaMedium />
                             </a>
                         </>
                     )}

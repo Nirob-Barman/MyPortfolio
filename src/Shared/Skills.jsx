@@ -23,8 +23,6 @@ const Skills = () => {
         { name: 'C', icon: DiCode },
         { name: 'C++', icon: DiCode },
         { name: 'Java', icon: DiJava },
-        // { name: 'Python', icon: DiPython },
-        // { name: 'Django', icon: SiDjango },
         { name: 'VS Code', icon: SiVisualstudiocode },
         { name: 'GitHub', icon: SiGithub },
         { name: 'Chrome DevTools', icon: SiGooglechrome },

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Project = () => {
@@ -109,16 +108,3 @@ const Project = () => {
 };
 
 export default Project;
-
-{/* {
-    https://i.ibb.co/YhsZDgB/ppii.png
-    https://i.ibb.co/wrW4qHY/ppiii.png
-    https://i.ibb.co/QbCFpHn/pppi.png
-    https://i.ibb.co/6YtYV8P/pppii.png
-    https://i.ibb.co/G28CSyt/pppiii.png
-    https://i.ibb.co/bJKSnT0/pi.png
-    https://i.ibb.co/CH6rBXq/pii.png
-    https://i.ibb.co/4gNrfhJ/piii.png
-    https://i.ibb.co/F46B8tL/ppi.png
-    } 
-*/}
