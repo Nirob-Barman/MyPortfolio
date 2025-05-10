@@ -6,7 +6,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_8baiizn", "template_0mmhhak", e.target, "xLitHCPjqiRQz07Om")
+        emailjs.sendForm("service_b48d5fm", "template_0mmhhak", e.target, "xLitHCPjqiRQz07Om")
             .then(() => {
                 Swal.fire({
                     icon: 'success',
