@@ -78,6 +78,17 @@ const ProjectsPage = () => {
                                 </a>
                             )}
 
+                            {project.links.repository && (
+                                <a
+                                    href={project.links.repository}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-blue-500 text-white px-4 py-2 rounded-full"
+                                >
+                                    Repository
+                                </a>
+                            )}
+
                             {project.links.server && (
                                 <a
                                     href={project.links.server}
