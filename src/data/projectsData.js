@@ -135,7 +135,7 @@ export const projectsData = [
     },
     {
         "name": "New Year, New Me",
-        "categories": ["Personal Development", "Web Design", "HTML/CSS"],
+        "categories": ["Web Design", "HTML/CSS"],
         "links": {
             "website": "https://nirob-barman.github.io/new-year-new-me/",
             "repository": "https://github.com/Nirob-Barman/new-year-new-me"
@@ -150,7 +150,7 @@ export const projectsData = [
     },
     {
         "name": "Leader Board CSS3",
-        "categories": ["Web Design", "UI/UX", "HTML/CSS"],
+        "categories": ["Web Design", "HTML/CSS"],
         "links": {
             "website": "https://nirob-barman.github.io/leader-board-css3/",
             "repository": "https://github.com/Nirob-Barman/leader-board-css3"
