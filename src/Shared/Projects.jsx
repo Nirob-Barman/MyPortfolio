@@ -61,13 +61,16 @@ const Project = () => {
 
     return (
         <div id='Projects'>
-            <div className='text-center text-xl mb-3'>
-                <h2 className="">Projects</h2>
+            <div className='text-center text-3xl font-bold mb-5'>
+                <h2>Explore Amazing Projects</h2>
             </div>
-            <div className='text-center text-xl mb-3'>
-                <h2 className="">All Projects are
-                    <span><Link to="/projects"> here</Link></span>
-                </h2>
+            <div className='text-center mb-8'>
+                <h3 className="text-xl font-medium">
+                    All Projects are{" "}
+                    <span className="text-blue-500 hover:text-blue-700">
+                        <Link to="/projects">here</Link>
+                    </span>
+                </h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
