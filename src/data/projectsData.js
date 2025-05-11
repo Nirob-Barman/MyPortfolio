@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         name: "Social Canvas",
-        categories: ["React", "Full Stack", "JavaScript", "UI/UX", "Web Design", "Frontend", "API Integration"],
+        categories: ["React", "Full Stack", "JavaScript", "UI/UX", "Web Design", "Frontend", "API Integration", "Tailwind"],
         links: {
             "website": "https://social-canvas-3b50e.web.app/",
             "server": "https://github.com/Nirob-Barman/Social-Canvas/tree/main/SocialCanvas/",
@@ -20,7 +20,7 @@ export const projectsData = [
     },
     {
         name: "Grow Green",
-        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration"],
+        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration", "Tailwind"],
         links: {
             "website": "https://grow-green-aa1e1.web.app/",
             "server": "https://github.com/Nirob-Barman/Grow-Green/tree/main/Grow-Green-Server/",
@@ -39,7 +39,7 @@ export const projectsData = [
     },
     {
         name: "EliteSportsAcademy",
-        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration", "UI/UX", "Frontend", "API Integration"],
+        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration", "UI/UX", "Frontend", "API Integration", "Tailwind"],
         links: {
             "website": "https://summer-camp-school-b1cb7.web.app/",
             "server": "https://github.com/Nirob-Barman/summer-camp-server",
@@ -58,7 +58,7 @@ export const projectsData = [
     },
     {
         name: "ToyVerse",
-        categories: ["React", "Full Stack", "JavaScript"],
+        categories: ["React", "Full Stack", "JavaScript", "Bootstrap"],
         links: {
             "website": "https://toy-marketplace-5c0d6.firebaseapp.com/",
             "server": "https://github.com/Nirob-Barman/toy-marketplace-server",
@@ -77,7 +77,7 @@ export const projectsData = [
     },
     {
         name: "Delicious Seeds",
-        categories: ["React", "Full Stack", "JavaScript", "Web Development", "UI/UX", "Frontend"],
+        categories: ["React", "Full Stack", "JavaScript", "Web Development", "UI/UX", "Frontend", "Bootstrap"],
         links: {
             "website": "https://chef-recipe-hunting-a4314.web.app/",
             "server": "https://github.com/Nirob-Barman/chef-recipe-hunter-server",
@@ -163,7 +163,7 @@ export const projectsData = [
     },
     {
         "name": "Bikerz Zone",
-        "categories": ["Web Design", "UI/UX", "HTML/CSS"],
+        "categories": ["Web Design", "UI/UX", "HTML/CSS", "Bootstrap"],
         "links": {
             "website": "https://nirob-barman.github.io/Bikerz-Zone/",
             "repository": "https://github.com/Nirob-Barman/Bikerz-Zone"
@@ -176,7 +176,7 @@ export const projectsData = [
     },
     {
         "name": "Shopping Cart",
-        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript"],
+        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript", "Bootstrap"],
         "links": {
             "website": "https://nirob-barman.github.io/Shopping-Cart/",
             "repository": "https://github.com/Nirob-Barman/Shopping-Cart"
@@ -190,7 +190,7 @@ export const projectsData = [
     },
     {
         "name": "Father's Bank",
-        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript"],
+        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript", "Tailwind"],
         "links": {
             "website": "https://nirob-barman.github.io/Fathers-Bank/",
             "repository": "https://github.com/Nirob-Barman/Fathers-Bank"
@@ -205,7 +205,7 @@ export const projectsData = [
     },
     {
         "name": "Geometry Genius Resources",
-        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript"],
+        "categories": ["Web Development", "Frontend", "HTML/CSS/JavaScript", "Tailwind"],
         "links": {
             "website": "https://motionless-pump.surge.sh/",
             "repository": "https://github.com/Nirob-Barman/Geometry-Genius-Resources"
@@ -218,7 +218,7 @@ export const projectsData = [
     },
     {
         "name": "AI Universe Hub",
-        "categories": ["Web Development", "Frontend", "API Integration"],
+        "categories": ["Web Development", "Frontend", "API Integration", "Bootstrap"],
         "links": {
             "website": "https://boisterous-liger-de7b46.netlify.app/",
             "repository": "https://github.com/Nirob-Barman/AI-Universe-Hub"
