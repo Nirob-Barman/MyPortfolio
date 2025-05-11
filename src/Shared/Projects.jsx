@@ -75,7 +75,7 @@ const Project = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {projectsData.map((project, index) => (
-                    <div key={index} className="relative overflow-hidden group">
+                    <div key={index} className="relative overflow-hidden group rounded-lg">
                         <div className="project-info p-4 bg-gray-100">
                             <h2 className="text-xl font-semibold">{project.name}</h2>
                             <ul className="mt-2  mb-4 h-40 overflow-auto">

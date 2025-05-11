@@ -26,7 +26,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="Contacts" className="bg-gray-900 text-white py-12 px-6">
+        <section id="Contacts" className="bg-gray-900 text-white py-12 px-6 my-12 rounded-lg">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
                 <div className="flex flex-col space-y-6">
                     <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
