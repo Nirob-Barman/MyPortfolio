@@ -52,6 +52,7 @@ const NavBar = () => {
                             <a href="#Skills">Skills</a>
                             <a href="#Projects">Projects</a>
                             <a href="#Contacts">Contact</a>
+                            <Link to="/blogs" className="hover:text-gray-300">Blogs</Link>
                             <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaGithub />
                             </a>
