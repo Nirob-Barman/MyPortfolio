@@ -9,7 +9,7 @@ const NavBar = () => {
 
     const handleDownload = () => {
         window.open(
-            'https://drive.google.com/u/1/uc?id=10PVL34FK4ZAsGuRsbpYorAUzB44xX-80&export=download'
+            'https://drive.google.com/u/1/uc?id=1KV9fUQ_md5Z9Advlw1OoDSWR-1H218GZ&export=download'
         );
     };
 
