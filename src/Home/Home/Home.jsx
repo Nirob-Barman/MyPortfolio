@@ -1,4 +1,5 @@
 import About from "../../Shared/About";
+import Certifications from "../../Shared/Certifications";
 import Introduction from "../../Shared/Introduction";
 import Projects from "../../Shared/Projects";
 import Skills from "../../Shared/Skills";
@@ -11,6 +12,7 @@ const Home = () => {
                 <Introduction />
                 <About />
                 <Skills />
+                <Certifications />
                 <Projects />
                 <Contact />
             </div>
