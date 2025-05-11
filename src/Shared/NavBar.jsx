@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
-import { AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineCloudDownload } from 'react-icons/ai';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,7 +64,7 @@ const NavBar = () => {
                         </>
                     )}
                     <button onClick={handleDownload} className="flex items-center text-white hover:text-gray-300">
-                        <AiOutlineDownload className="mr-1" size={30} />Resume
+                        <AiOutlineCloudDownload className="mr-1" size={30} />Resume
                     </button>
                 </div>
 
@@ -94,7 +94,7 @@ const NavBar = () => {
                     <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="block text-white py-2 hover:text-gray-300">LinkedIn</a>
                     <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="block text-white py-2 hover:text-gray-300">Medium</a>
                     <button onClick={handleDownload} className="flex items-center text-white py-2 mt-4 hover:text-gray-300">
-                        <AiOutlineDownload className="mr-1" size={30} />Resume
+                        <AiOutlineCloudDownload className="mr-1" size={30} />Resume
                     </button>
                 </div>
             )}
