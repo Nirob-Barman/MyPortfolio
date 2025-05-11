@@ -75,7 +75,7 @@ const Project = () => {
                     <div key={index} className="relative overflow-hidden group">
                         <div className="project-info p-4 bg-gray-100">
                             <h2 className="text-xl font-semibold">{project.name}</h2>
-                            <ul className="mt-2 h-40">
+                            <ul className="mt-2  mb-4 h-40 overflow-auto">
                                 {project.features.map((feature, index) => (
                                     <li key={index} className="flex items-center">
                                         <span className="mr-1 text-green-500">&#10003;</span> {feature}
