@@ -10,7 +10,7 @@ const Blogs = () => {
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16">
             <div className="max-w-5xl mx-auto px-6">
-                <h2 className="text-4xl font-bold text-center my-12 text-gray-200">My Blogs</h2>
+                <h2 className="text-4xl font-bold text-center my-12 text-gray-200">Thoughts, Tutorials & Insights</h2>
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* {blogsData */}
                     {[...blogsData]

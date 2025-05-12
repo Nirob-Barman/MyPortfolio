@@ -40,7 +40,7 @@ const NavBar = () => {
             <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-24">
                 <div>
                     <Link to="/" className="text-2xl font-bold">
-                        Home
+                        Nirob Barman
                     </Link>
                 </div>
 
@@ -62,11 +62,12 @@ const NavBar = () => {
                             <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaMedium />
                             </a>
+                            <button onClick={handleDownload} className="flex items-center text-white hover:text-gray-300">
+                                <AiOutlineCloudDownload className="mr-1" size={30} />Resume
+                            </button>
                         </>
                     )}
-                    <button onClick={handleDownload} className="flex items-center text-white hover:text-gray-300">
-                        <AiOutlineCloudDownload className="mr-1" size={30} />Resume
-                    </button>
+                    
                 </div>
 
                 <div className="md:hidden">
