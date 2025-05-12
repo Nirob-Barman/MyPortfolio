@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import blogsData from "../data/blogsData";
+import { useEffect } from "react";
 
 const Blogs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []); // Runs once when Blogs is rendered
+
     return (
         <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-16">
             <div className="max-w-5xl mx-auto px-6">
