@@ -91,9 +91,18 @@ const NavBar = () => {
                     <a href="#Skills" className="block text-white py-2 hover:text-gray-300">Skills</a>
                     <a href="#Projects" className="block text-white py-2 hover:text-gray-300">Projects</a>
                     <a href="#Contacts" className="block text-white py-2 hover:text-gray-300">Contact</a>
-                    <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="block text-white py-2 hover:text-gray-300">GitHub</a>
-                    <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="block text-white py-2 hover:text-gray-300">LinkedIn</a>
-                    <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="block text-white py-2 hover:text-gray-300">Medium</a>
+                    <Link to="/blogs" className="hover:text-gray-300">Blogs</Link>
+                    <div className="flex justify-start space-x-4 mt-4">
+                        <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 text-xl">
+                            <FaGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 text-xl">
+                            <FaLinkedin />
+                        </a>
+                        <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 text-xl">
+                            <FaMedium />
+                        </a>
+                    </div>
                     <button onClick={handleDownload} className="flex items-center text-white py-2 mt-4 hover:text-gray-300">
                         <AiOutlineCloudDownload className="mr-1" size={30} />Resume
                     </button>

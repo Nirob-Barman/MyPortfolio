@@ -31,12 +31,10 @@ const Introduction = () => {
                 </div>
 
                 <p className="text-base text-gray-700 mt-6">
-                    I'm a software engineer focused on .NET technologies, including ASP.NET Core and ASP.NET MVC. I build scalable, maintainable applications using Clean Architecture.
+                    I'm a .NET developer who loves clean code, elegant solutions, and building real-world applications that scale.
                 </p>
 
-                <p className="text-base text-gray-700 mt-4">
-                    I enjoy working with C#, JavaScript, React.js, Tailwind CSS, and modern front-end frameworks. Passionate about problem-solving and continuous learning.
-                </p>
+
             </div>
         </div>
     );
