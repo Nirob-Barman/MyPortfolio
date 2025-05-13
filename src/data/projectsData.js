@@ -39,7 +39,7 @@ export const projectsData = [
     },
     {
         name: "EliteSportsAcademy",
-        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration", "UI/UX", "Frontend", "API Integration", "Tailwind"],
+        categories: ["Full Stack", "React", "CSS", "JavaScript", "API Integration", "UI/UX", "Frontend", "API Integration", "Tailwind", "DaisyUI"],
         links: {
             "website": "https://summer-camp-school-b1cb7.web.app/",
             "server": "https://github.com/Nirob-Barman/summer-camp-server",

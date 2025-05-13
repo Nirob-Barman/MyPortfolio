@@ -31,7 +31,7 @@ const Introduction = () => {
                 </div>
 
                 <p className="text-base text-gray-700 mt-6">
-                    I'm a .NET developer who loves clean code, elegant solutions, and building real-world applications that scale.
+                    I'm a .NET developer who loves clean code, efficient solutions, and building real-world applications that scale.
                 </p>
 
 
