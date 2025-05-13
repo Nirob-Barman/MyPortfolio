@@ -229,6 +229,32 @@ export const projectsData = [
             "Sorts tools by their publication date.",
             "Provides detailed information about each tool in a modal view."
         ]
+    },
+    {
+        "name": "FashionQuest",
+        "categories": ["Web Design", "E-Commerce", "HTML", "CSS", "Bootstrap"],
+        "links": {
+            "website": "https://nirob-barman.github.io/FashionQuest/",
+            "repository": "https://github.com/Nirob-Barman/FashionQuest"
+        },
+        "features": [
+            "Responsive and stylish e-commerce website template built using HTML, CSS, and Bootstrap 5.",
+            "Showcases product listings and categories suitable for online retail platforms.",
+            "Utilizes Bootstrap components for a modern and interactive UI."
+        ]
+    },
+    {
+        "name": "PHero-Tube",
+        "categories": ["Web Application", "UI/UX", "HTML", "CSS", "JavaScript", "Bootstrap"],
+        "links": {
+            "website": "https://nirob-barman.github.io/PHero-Tube/",
+            "repository": "https://github.com/Nirob-Barman/PHero-Tube"
+        },
+        "features": [
+            "A video-sharing platform with a responsive front-end powered by Bootstrap.",
+            "Implements Bootstrap’s grid system and utilities for cross-device compatibility.",
+            "Includes sections for featured videos, user profiles, and search functionality."
+        ]
     }
     // Add other projects similarly
 ];  
