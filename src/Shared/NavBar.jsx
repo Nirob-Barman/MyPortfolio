@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaHome, FaGithub, FaLinkedin, FaMedium, FaProjectDiagram, FaBlog } from 'react-icons/fa';
+import { FaHome, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+import { LuPenTool } from "react-icons/lu";
+import { GrProjects } from "react-icons/gr";
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 
 const NavBar = () => {
@@ -71,10 +73,10 @@ const NavBar = () => {
                                 <FaHome />
                             </Link>
                             <Link to="/projects" className="text-2xl font-bold">
-                                <FaProjectDiagram />
+                                <GrProjects />
                             </Link>
                             <Link to="/blogs" className="text-2xl font-bold">
-                                <FaBlog />
+                                <LuPenTool />
                             </Link>
                             <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaGithub />
