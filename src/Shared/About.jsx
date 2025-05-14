@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <div id="About">
+        <div id="About" className="py-12">
             <section className="bg-white rounded-lg shadow-lg p-8">
                 <p className="mb-4">
                     I am a Software Engineer specializing in .NET technologies like ASP.NET Core and ASP.NET MVC. My expertise includes building scalable, maintainable web applications using Clean Architecture and integrating databases like MSSQL, MySQL, and MongoDB.

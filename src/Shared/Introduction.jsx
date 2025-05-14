@@ -19,7 +19,7 @@ const Introduction = () => {
                     <h1 className="text-3xl font-bold mb-2 text-gray-800">
                         Hi, I'm <span className="text-blue-500">Nirob Barman</span>
                     </h1>
-                    <h2 className="text-xl text-gray-600">
+                    <h2 className="text-xl text-gray-600 font-semibold">
                         <Typewriter
                             options={{
                                 strings: ["Software Engineer", "Full Stack Developer", "Web Developer", ".NET Enthusiast"],
@@ -31,7 +31,7 @@ const Introduction = () => {
                 </div>
 
                 <p className="text-base text-gray-700 mt-6">
-                    I'm a .NET developer who loves clean code, efficient solutions, and building real-world applications that scale.
+                    I'm a <span className='font-bold text-blue-500'>.NET developer</span> who loves clean code, efficient solutions, and building <br /> real-world applications that scale.
                 </p>
 
 

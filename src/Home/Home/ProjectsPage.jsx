@@ -30,7 +30,7 @@ const ProjectsPage = () => {
     );
 
     return (
-        <div className="pt-24 my-24">
+        <div className="bg-white bg-opacity-90 rounded-2xl shadow-2xl p-8 md:p-16 max-w-6xl mx-auto">
             <div className="text-center mb-8">
                 <h1 className="text-3xl font-bold mb-4">Projects</h1>
                 <p className="text-gray-900 text-lg">Filter by your favorite technologies</p>
@@ -44,8 +44,8 @@ const ProjectsPage = () => {
                         onClick={() => handleCategoryToggle(category)}
                         className={`px-4 py-2 rounded-full border transition-all duration-300 shadow-sm 
                             ${selectedCategories.includes(category) ?
-                                "bg-blue-500 text-white border-blue-500" :
-                                "bg-gray-200 text-gray-700 border-gray-300 hover:bg-gray-300"}
+                                "bg-blue-500 text-white font-semibold border-blue-500" :
+                                "bg-gray-200 text-gray-700 border-gray-300 hover:bg-white"}
                         `}
                     >
                         {category}

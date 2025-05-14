@@ -60,7 +60,7 @@ const Project = () => {
     ]
 
     return (
-        <div id='Projects'>
+        <div id='Projects' className='py-12'>
             <div className='text-center text-3xl font-bold mb-5'>
                 <h2>Explore Amazing Projects</h2>
             </div>
@@ -76,7 +76,7 @@ const Project = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {projectsData.map((project, index) => (
                     <div key={index} className="relative overflow-hidden group rounded-lg">
-                        <div className="project-info p-4 bg-gray-100">
+                        <div className="p-4 bg-white rounded-lg">
                             <h2 className="text-xl font-semibold">{project.name}</h2>
                             <ul className="mt-2  mb-4 h-40 overflow-auto">
                                 {project.features.map((feature, index) => (

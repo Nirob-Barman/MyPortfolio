@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+import { FaHome, FaGithub, FaLinkedin, FaMedium, FaProjectDiagram, FaBlog } from 'react-icons/fa';
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 
 const NavBar = () => {
@@ -36,8 +36,8 @@ const NavBar = () => {
     }, []);
 
     return (
-        <nav className="bg-gray-800 text-white fixed top-0 left-0 right-0 z-50">
-            <div className="container mx-auto flex items-center justify-between py-4 px-6 md:px-24">
+        <nav className="fixed left-0 right-0 bg-gray-800 text-white z-50">
+            <div className="flex items-center justify-between py-4 px-6 md:px-24">
                 <div>
                     <Link to="/" className="text-2xl font-bold">
                         Nirob Barman
@@ -45,7 +45,7 @@ const NavBar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    {location.pathname === "/" && (
+                    {location.pathname === "/" ?
                         <>
                             <a href="#Introduction">Introduction</a>
                             <a href="#About">About</a>
@@ -66,8 +66,28 @@ const NavBar = () => {
                                 <AiOutlineCloudDownload className="mr-1" size={30} />Resume
                             </button>
                         </>
-                    )}
-                    
+                        : <>
+                            <Link to="/" className="text-2xl font-bold">
+                                <FaHome />
+                            </Link>
+                            <Link to="/projects" className="text-2xl font-bold">
+                                <FaProjectDiagram />
+                            </Link>
+                            <Link to="/blogs" className="text-2xl font-bold">
+                                <FaBlog />
+                            </Link>
+                            <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                                <FaGithub />
+                            </a>
+                            <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                                <FaLinkedin />
+                            </a>
+                            <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                                <FaMedium />
+                            </a>
+                        </>
+                    }
+
                 </div>
 
                 <div className="md:hidden">

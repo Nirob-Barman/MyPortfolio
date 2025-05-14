@@ -28,8 +28,8 @@ const Contact = () => {
     return (
         <section id="Contacts" className="bg-gray-900 text-white py-12 px-6 my-12 rounded-lg">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-                <div className="flex flex-col space-y-6">
-                    <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
+                <div className="flex flex-col space-y-6 pl-6">
+                    <h2 className="text-4xl font-bold pt-2">Get in Touch</h2>
                     <p className="text-gray-400">I'd love to hear from you! Feel free to reach out through this form or connect with me on my social platforms.</p>
                     <div className="space-y-4">
                         <a href="https://github.com/Nirob-Barman" target="_blank" rel="noreferrer" className="flex items-center space-x-3 text-gray-300 hover:text-white">
