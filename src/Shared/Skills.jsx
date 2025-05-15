@@ -1,5 +1,7 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiCodeBadge, DiMsqlServer } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql } from 'react-icons/si';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiCodeBadge, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
+import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui } from 'react-icons/si';
+import { BiLogoCPlusPlus, BiLogoVisualStudio } from "react-icons/bi";
+import { TbCircleLetterC } from "react-icons/tb";
 
 const Skills = () => {
     const skills = [
@@ -7,9 +9,12 @@ const Skills = () => {
         { name: '.NET', icon: SiDotnet },
         { name: 'ASP.NET MVC', icon: SiDotnet },
         { name: 'ASP.NET Core', icon: SiDotnet },
+        { name: 'ASP.NET Web API', icon: DiCodeBadge },
+        { name: 'REST API', icon: DiCodeBadge },
         { name: 'HTML', icon: DiHtml5 },
         { name: 'CSS', icon: DiCss3 },
         { name: 'JavaScript', icon: DiJavascript1 },
+        { name: 'jQuery', icon: DiJqueryLogo },
         { name: 'ES6', icon: DiJavascript1 },
         { name: 'React', icon: DiReact },
         { name: 'Node.js', icon: DiNodejsSmall },
@@ -17,11 +22,13 @@ const Skills = () => {
         { name: 'Express.js', icon: SiExpress },
         { name: 'MSSQL', icon: DiMsqlServer },
         { name: 'MySQL', icon: SiMysql },
-        { name: 'Tailwind CSS', icon: SiTailwindcss },
         { name: 'Bootstrap', icon: DiBootstrap },
-        { name: 'C', icon: DiCode },
-        { name: 'C++', icon: DiCode },
+        { name: 'Tailwind CSS', icon: SiTailwindcss },
+        { name: 'DaisyUI', icon: SiDaisyui },
+        { name: 'C', icon: TbCircleLetterC },
+        { name: 'C++', icon: BiLogoCPlusPlus },
         { name: 'Java', icon: DiJava },
+        { name: 'Visual Studio', icon: BiLogoVisualStudio },
         { name: 'VS Code', icon: SiVisualstudiocode },
         { name: 'GitHub', icon: SiGithub },
         { name: 'Chrome DevTools', icon: SiGooglechrome },
