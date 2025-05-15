@@ -16,7 +16,7 @@ const Blogs = () => {
                     {[...blogsData]
                         .sort((a, b) => new Date(b.date) - new Date(a.date))
                         .map((blog, index) => (
-                        <a key={index} href={blog.link} target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                            <a key={index} href={blog.link} target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transform hover:scale-105 hover:rotate-3d transition duration-300">
                             <h3 className="text-2xl font-semibold mb-3">{blog.title}</h3>
                             <p className="text-gray-400 mb-2">{blog.date}</p>
                             <p className="text-gray-300 mb-4">{blog.description}</p>
