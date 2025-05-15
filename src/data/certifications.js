@@ -41,6 +41,55 @@ const certifications = [
         link: 'https://simpli-web.app.link/e/XaOjgsSmhTb',
         // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
     },
+    {
+        title: 'Introduction to JavaScript',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/18CAjIucNHRrT6b240LvOgdIb-pmK396y/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'OOPs Concepts in C++',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1C9C0hwg6raAnKc_cXJx2yKyWPiQZikph/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'Algorithms in C',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1Hzv66b8GdzKWgE9nCxJUrl41L_MZ6Oyz/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'Front End Development - HTML',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1epC8uJoSdokVGq4tOQobFSsZSou_E_yA/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'C++ Tutorial',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1EwxwaRb2pGvyII_vQxzna1R1OSujsFka/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'C for Beginners',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1YC40fXIwz9Bva0tet_JHN1JhGpFy0P9y/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
+    {
+        title: 'Data Structures in C',
+        organization: 'Great Learning',
+        date: 'August 2023',
+        link: 'https://drive.google.com/file/d/1pk5XHNSM2QSsTuqsXj2geGHGn-9RZpE3/view?usp=sharing',
+        // image: 'https://drive.google.com/uc?export=view&id=1_E6ztHQv5TXNsB6XHC9WlinevQna15do'
+    },
 ];
 
 export default certifications;
