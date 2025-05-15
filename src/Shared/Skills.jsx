@@ -1,7 +1,8 @@
 import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiCodeBadge, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui } from 'react-icons/si';
+import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit } from 'react-icons/si';
 import { BiLogoCPlusPlus, BiLogoVisualStudio } from "react-icons/bi";
 import { TbCircleLetterC } from "react-icons/tb";
+import { FaGitlab } from "react-icons/fa";
 
 const Skills = () => {
     const skills = [
@@ -30,7 +31,9 @@ const Skills = () => {
         { name: 'Java', icon: DiJava },
         { name: 'Visual Studio', icon: BiLogoVisualStudio },
         { name: 'VS Code', icon: SiVisualstudiocode },
+        { name: 'Git', icon: SiGit },
         { name: 'GitHub', icon: SiGithub },
+        { name: 'GitLab', icon: FaGitlab },
         { name: 'Chrome DevTools', icon: SiGooglechrome },
         { name: 'Render', icon: SiRender },
         { name: 'Vercel', icon: SiVercel },
