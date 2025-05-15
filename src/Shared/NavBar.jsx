@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaHome, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
-import { LuPenTool } from "react-icons/lu";
-import { GrProjects } from "react-icons/gr";
+import { GiNotebook } from "react-icons/gi";
+import { FaRegChartBar } from "react-icons/fa";
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 
 const NavBar = () => {
@@ -45,23 +45,22 @@ const NavBar = () => {
                         Nirob Barman
                     </Link>
                 </div>
-
                 <div className="hidden md:flex items-center space-x-4">
                     {location.pathname === "/" ?
                         <>
                             <a href="#Introduction">Introduction</a>
                             <a href="#About">About</a>
-                            <a href="#Skills">Skills</a>
                             <a href="#Projects">Projects</a>
+                            <a href="#Skills">Skills</a>                            
                             <a href="#Contacts">Contact</a>
-                            <Link to="/blogs" className="hover:text-gray-300">Blogs</Link>
-                            <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <Link to="/blogs" title='Blogs' className="hover:text-gray-300">Blogs</Link>
+                            <a href="https://github.com/Nirob-Barman" target="_blank" title='Github' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaGithub />
                             </a>
-                            <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" title='Linkedin' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaLinkedin />
                             </a>
-                            <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <a href="https://medium.com/@nirob-barman" target="_blank" title='Medium' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaMedium />
                             </a>
                             <button onClick={handleDownload} className="flex items-center text-white hover:text-gray-300">
@@ -72,24 +71,19 @@ const NavBar = () => {
                             <Link to="/" className="text-2xl font-bold">
                                 <FaHome />
                             </Link>
-                            <Link to="/projects" className="text-2xl font-bold">
-                                <GrProjects />
-                            </Link>
-                            <Link to="/blogs" className="text-2xl font-bold">
-                                <LuPenTool />
-                            </Link>
-                            <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <Link to="/projects" className="text-2xl font-bold"><FaRegChartBar /></Link>
+                            <Link to="/blogs" title='Blogs' className="text-2xl font-bold"><GiNotebook /></Link>
+                            <a href="https://github.com/Nirob-Barman" target="_blank" title='Github' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaGithub />
                             </a>
-                            <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" title='Linkedin' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaLinkedin />
                             </a>
-                            <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">
+                            <a href="https://medium.com/@nirob-barman" target="_blank" title='Medium' rel="noopener noreferrer" className="hover:text-gray-300">
                                 <FaMedium />
                             </a>
                         </>
                     }
-
                 </div>
 
                 <div className="md:hidden">
@@ -109,13 +103,9 @@ const NavBar = () => {
 
             {isMenuOpen && (
                 <div className="md:hidden bg-gray-700 py-4 px-6">
-                    <a href="#Introduction" className="block text-white py-2 hover:text-gray-300">Introduction</a>
-                    <a href="#About" className="block text-white py-2 hover:text-gray-300">About</a>
-                    <a href="#Skills" className="block text-white py-2 hover:text-gray-300">Skills</a>
-                    <a href="#Projects" className="block text-white py-2 hover:text-gray-300">Projects</a>
-                    <a href="#Contacts" className="block text-white py-2 hover:text-gray-300">Contact</a>
-                    <Link to="/blogs" className="hover:text-gray-300">Blogs</Link>
-                    <div className="flex justify-start space-x-4 mt-4">
+                    <div className="flex justify-center space-x-4 mt-4">
+                        <Link to="/projects" className="text-2xl font-bold"><FaRegChartBar /></Link>
+                        <Link to="/blogs" className="text-2xl font-bold"><GiNotebook /></Link>
                         <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 text-xl">
                             <FaGithub />
                         </a>
@@ -126,9 +116,6 @@ const NavBar = () => {
                             <FaMedium />
                         </a>
                     </div>
-                    <button onClick={handleDownload} className="flex items-center text-white py-2 mt-4 hover:text-gray-300">
-                        <AiOutlineCloudDownload className="mr-1" size={30} />Resume
-                    </button>
                 </div>
             )}
         </nav>
