@@ -51,7 +51,8 @@ const NavBar = () => {
                             <a href="#Introduction">Introduction</a>
                             <a href="#About">About</a>
                             <a href="#Projects">Projects</a>
-                            <a href="#Skills">Skills</a>                            
+                            <a href="#Skills">Skills</a>
+                            <a href="#Certifications">Certifications</a>
                             <a href="#Contacts">Contact</a>
                             <Link to="/blogs" title='Blogs' className="hover:text-gray-300">Blogs</Link>
                             <a href="https://github.com/Nirob-Barman" target="_blank" title='Github' rel="noopener noreferrer" className="hover:text-gray-300">
