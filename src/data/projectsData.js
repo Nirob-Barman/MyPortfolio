@@ -96,7 +96,7 @@ export const projectsData = [
     },
     {
         "name": "Influencer Gear",
-        "categories": ["Web Design", "UI/UX", "HTML", " CSS"],
+        "categories": ["Web Design", "UI/UX", "HTML", " CSS", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/influencer-gear/",
             "repository": "https://github.com/Nirob-Barman/influencer-gear"
@@ -122,7 +122,7 @@ export const projectsData = [
     },
     {
         "name": "G3 Architects",
-        "categories": ["Web Design", "UI/UX", "HTML", " CSS"],
+        "categories": ["Web Design", "UI/UX", "HTML", " CSS", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/g3-architects/",
             "repository": "https://github.com/Nirob-Barman/g3-architects"
@@ -135,7 +135,7 @@ export const projectsData = [
     },
     {
         "name": "New Year, New Me",
-        "categories": ["Web Design", "HTML", " CSS"],
+        "categories": ["Web Design", "HTML", " CSS", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/new-year-new-me/",
             "repository": "https://github.com/Nirob-Barman/new-year-new-me"
@@ -150,7 +150,7 @@ export const projectsData = [
     },
     {
         "name": "Leader Board CSS3",
-        "categories": ["Web Design", "HTML", " CSS"],
+        "categories": ["Web Design", "HTML", " CSS", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/leader-board-css3/",
             "repository": "https://github.com/Nirob-Barman/leader-board-css3"
@@ -163,7 +163,7 @@ export const projectsData = [
     },
     {
         "name": "Bikerz Zone",
-        "categories": ["Web Design", "UI/UX", "HTML", " CSS", "Bootstrap"],
+        "categories": ["Web Design", "UI/UX", "HTML", " CSS", "Bootstrap", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/Bikerz-Zone/",
             "repository": "https://github.com/Nirob-Barman/Bikerz-Zone"
@@ -205,7 +205,7 @@ export const projectsData = [
     },
     {
         "name": "Geometry Genius Resources",
-        "categories": ["Web Development", "Frontend", "HTML", "CSS", "JavaScript", "Tailwind"],
+        "categories": ["Web Development", "Frontend", "HTML", "CSS", "JavaScript", "Tailwind", "Figma"],
         "links": {
             "website": "https://motionless-pump.surge.sh/",
             "repository": "https://github.com/Nirob-Barman/Geometry-Genius-Resources"
@@ -232,7 +232,7 @@ export const projectsData = [
     },
     {
         "name": "FashionQuest",
-        "categories": ["Web Design", "E-Commerce", "HTML", "CSS", "Bootstrap"],
+        "categories": ["Web Design", "E-Commerce", "HTML", "CSS", "Bootstrap", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/FashionQuest/",
             "repository": "https://github.com/Nirob-Barman/FashionQuest"
@@ -245,7 +245,7 @@ export const projectsData = [
     },
     {
         "name": "PHero-Tube",
-        "categories": ["Web Application", "UI/UX", "HTML", "CSS", "JavaScript", "Bootstrap"],
+        "categories": ["Web Application", "UI/UX", "HTML", "CSS", "JavaScript", "Bootstrap", "Figma"],
         "links": {
             "website": "https://nirob-barman.github.io/PHero-Tube/",
             "repository": "https://github.com/Nirob-Barman/PHero-Tube"
