@@ -27,6 +27,15 @@ const Certifications = () => {
     return (
         <div id="Certifications" className="my-16">
             <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">Certified Achievements & Skills Development</h2>
+
+            {loading && (
+                <p className="text-center text-gray-600 text-lg">Loading certifications...</p>
+            )}
+
+            {error && (
+                <p className="text-center text-red-500 text-lg">Error: {error}</p>
+            )}
+
             <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
                 {/* {certifications */}
                 {[...certifications]

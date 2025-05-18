@@ -1,17 +1,38 @@
 import { useState, useEffect } from "react";
-import { projectsData } from "../../data/projectsData";
+// import { projectsData } from "../../data/projectsData";
 
 const ProjectsPage = () => {
+    const [projects, setProjects] = useState([]);
+    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
     useEffect(() => {
         // Scroll to the top when the page loads
         window.scrollTo(0, 0);
-    }, []);
 
-    const [selectedCategories, setSelectedCategories] = useState([]);
+        const fetchProjects = async () => {
+            try {
+                const response = await fetch("https://my-portfolio-api-lake.vercel.app/projects");
+                if (!response.ok) {
+                    throw new Error("Failed to fetch projects");
+                }
+                const data = await response.json();
+                setProjects(data);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProjects();
+
+    }, []);
 
     // Extract unique categories from all projects
     const allCategories = Array.from(
-        new Set(projectsData.flatMap(project => project.categories))
+        new Set(projects.flatMap(project => project.categories))
     );
 
     // Handle category filter toggle
@@ -24,7 +45,7 @@ const ProjectsPage = () => {
     };
 
     // Filter projects based on selected categories
-    const filteredProjects = projectsData.filter(project =>
+    const filteredProjects = projects.filter(project =>
         selectedCategories.length === 0 ||
         selectedCategories.some(cat => project.categories.includes(cat))
     );
@@ -35,6 +56,16 @@ const ProjectsPage = () => {
                 <h1 className="text-3xl font-bold mb-4">Projects</h1>
                 <p className="text-gray-900 text-lg">Filter by your favorite technologies</p>
             </div>
+
+            {loading && (
+                <div className="text-center text-gray-600 text-lg">Loading projects...</div>
+            )}
+
+            {error && (
+                <div className="text-center text-red-500 text-lg mb-8">
+                    Error: {error}
+                </div>
+            )}
 
             {/* Category Filters */}
             <div className="flex flex-wrap gap-3 mb-8 justify-center">
