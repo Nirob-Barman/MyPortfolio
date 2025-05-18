@@ -52,6 +52,7 @@ const NavBar = () => {
                             <a href="#About">About</a>
                             <a href="#Projects">Projects</a>
                             <a href="#Skills">Skills</a>
+                            <a href="#ProblemSolving">Coding Profiles</a>
                             <a href="#Certifications">Certifications</a>
                             <a href="#Contacts">Contact</a>
                             <Link to="/blogs" title='Blogs' className="hover:text-gray-300">Blogs</Link>
