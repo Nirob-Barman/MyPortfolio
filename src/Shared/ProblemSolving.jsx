@@ -21,7 +21,7 @@ const ProblemSolving = () => {
                         href={profile.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-col items-center bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all hover:bg-blue-100"
+                        className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
                     >
                         <span className="text-5xl mb-3 text-blue-600">{profile.icon}</span>
                         <span className="text-lg font-semibold text-gray-600">{profile.name}</span>
