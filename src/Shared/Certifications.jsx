@@ -1,6 +1,29 @@
-import certifications from '../data/certifications';
+import { useEffect, useState } from 'react';
+// import certifications from '../data/certifications';
 
 const Certifications = () => {
+    const [certifications, setCertifications] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        fetch('https://my-portfolio-api-lake.vercel.app/certifications')
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch certifications');
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setCertifications(data);
+                setLoading(false);
+            })
+            .catch((error) => {
+                setError(error.message);
+                setLoading(false);
+            });
+    }, []);
+
     return (
         <div id="Certifications" className="my-16">
             <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">Certified Achievements & Skills Development</h2>
