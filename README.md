@@ -6,34 +6,34 @@ Welcome to my personal portfolio! This project showcases my skills, projects, ce
 
 You can view the live version of the portfolio here:
 
-* [My Portfolio](https://nirob-barman-19.web.app/)
+- [My Portfolio](https://nirob-barman-19.web.app/)
 
 ## 📂 Project Repository
 
 You can find the source code for this project on GitHub:
 
-* [Portfolio Repository](https://github.com/Nirob-Barman/MyPortfolio)
+- [Portfolio Repository](https://github.com/Nirob-Barman/MyPortfolio)
 
 ---
 
 ## 🚀 Features
 
-* Interactive personal introduction with typewriter effect
-* Projects showcase with images, descriptions, and live links
-* Skill set with technology icons
-* Certifications and professional experience
-* Contact form for easy communication
-* Responsive design for mobile and desktop
-* Smooth animations with Framer Motion
+- Interactive personal introduction with typewriter effect
+- Projects showcase with images, descriptions, and live links
+- Skill set with technology icons
+- Certifications and professional experience
+- Contact form for easy communication
+- Responsive design for mobile and desktop
+- Smooth animations with Framer Motion
 
 ## 🛠️ Technologies Used
 
-* **Frontend**: React.js, Tailwind CSS, Framer Motion, Typewriter Effect
-* **Backend**: Firebase (for hosting and authentication)
-* **Deployment**: Firebase, GitHub Pages
+- **Frontend**: React.js, Tailwind CSS, Framer Motion, Typewriter Effect
+- **Backend**: Firebase (for hosting and authentication)
+- **Deployment**: Firebase, GitHub Pages
 <!-- * **Design Tools**: Figma, Photoshop -->
 
-<!-- 
+<!--
 ## 📁 Project Structure
 
 ```
@@ -60,6 +60,29 @@ MyPortfolio/
 │
 └── README.md
 ``` -->
+
+## 📡 API (Backend for Portfolio Data)
+
+To serve dynamic data like projects, blogs, and certifications, a custom Express.js API is hosted separately.
+
+### 🔗 Live API
+
+- [My Portfolio API](https://my-portfolio-api-lake.vercel.app)
+
+### 📁 API Repository
+
+- [Portfolio API GitHub](https://github.com/Nirob-Barman/MyPortfolioAPI)
+
+### ✨ Available API Endpoints
+
+| Route             | Description                        |
+| ----------------- | ---------------------------------- |
+| `/`               | API status and available endpoints |
+| `/certifications` | List of certifications             |
+| `/projects`       | List of portfolio projects         |
+| `/blogs`          | List of blog entries               |
+
+---
 
 ## 🛠️ Setup Instructions
 
@@ -91,14 +114,24 @@ npm run dev
 
 ## 🌐 Deployment
 
-* The project is deployed using Firebase Hosting.
-* You can also deploy it on Vercel, Netlify, or any other static hosting platform.
+- The project is deployed using Firebase Hosting.
+- You can also deploy it on Vercel, Netlify, or any other static hosting platform.
 
 ## 📞 Contact
 
-* LinkedIn: [Nirob Barman](https://www.linkedin.com/in/nirob-barman-a1b120147/)
-* GitHub: [Nirob-Barman](https://github.com/Nirob-Barman)
-* Email: [nirob.barman.19@gmail.com](mailto:nirob.barman.19@gmail.com)
+- LinkedIn: [Nirob Barman](https://www.linkedin.com/in/nirob-barman-a1b120147/)
+- GitHub: [Nirob-Barman](https://github.com/Nirob-Barman)
+- Email: [nirob.barman.19@gmail.com](mailto:nirob.barman.19@gmail.com)
+
+
+## ✍️ Author
+
+- 👤 **Nirob Barman**  
+- [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Nirob-Barman)
+- [![Medium](https://img.shields.io/badge/Medium-Blog-black?logo=medium)](https://nirob-barman.medium.com/)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/nirob-barman/)
+- [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-brightgreen?logo=firefox-browser)](https://nirob-barman-19.web.app/)
+- [![Email](https://img.shields.io/badge/Email-Contact-orange?logo=gmail)](mailto:nirob.barman.19@gmail.com)
 
 ## 📄 License
 
