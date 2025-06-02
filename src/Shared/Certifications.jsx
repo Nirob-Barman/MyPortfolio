@@ -43,7 +43,7 @@ const Certifications = () => {
                     .map((cert, index) => (
                         <a key={index} href={cert.link} target="_blank" rel="noopener noreferrer" className="block p-6 bg-white rounded-lg shadow-lg transition-transform hover:scale-105 hover:shadow-2xl">
                             {/* <img src={cert.image} alt={cert.organization} className="h-10 mx-auto mb-4" /> */}
-                            <h3 className="text-xl font-semibold text-gray-900 truncate" title={cert.title}>{cert.title}</h3>
+                            <h3 className="text-xl font-semibold text-gray-900 sm:truncate" title={cert.title}>{cert.title}</h3>
                             <p className="text-gray-600">{cert.organization}</p>
                             <p className="text-sm text-gray-500">{cert.date}</p>
                         </a>
