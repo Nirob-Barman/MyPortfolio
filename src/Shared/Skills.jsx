@@ -1,4 +1,4 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiJava, DiCode, DiCodeBadge, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiCode, DiCodeBadge, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
 import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit } from 'react-icons/si';
 import { BiLogoCPlusPlus, BiLogoVisualStudio } from "react-icons/bi";
 import { TbCircleLetterC } from "react-icons/tb";
@@ -28,7 +28,7 @@ const Skills = () => {
         { name: 'DaisyUI', icon: SiDaisyui },
         { name: 'C', icon: TbCircleLetterC },
         { name: 'C++', icon: BiLogoCPlusPlus },
-        { name: 'Java', icon: DiJava },
+        // { name: 'Java', icon: DiJava },
         { name: 'Visual Studio', icon: BiLogoVisualStudio },
         { name: 'VS Code', icon: SiVisualstudiocode },
         { name: 'Git', icon: SiGit },
