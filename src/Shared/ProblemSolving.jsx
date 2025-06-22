@@ -24,7 +24,7 @@ const ProblemSolving = () => {
                         className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 shadow-md transition-transform hover:scale-105 hover:shadow-2xl"
                     >
                         <span className="text-5xl mb-3 text-blue-600">{profile.icon}</span>
-                        <span className="text-lg font-semibold text-gray-600">{profile.name}</span>
+                        <span className="text-lg font-semibold text-gray-800">{profile.name}</span>
                     </a>
                 ))}
             </div>
