@@ -1,58 +1,83 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiCode, DiCodeBadge, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFigma, SiVercel, SiNetlify, SiFirebase, SiVisualstudiocode, SiGithub, SiGooglechrome, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit } from 'react-icons/si';
-import { BiLogoCPlusPlus, BiLogoVisualStudio } from "react-icons/bi";
-import { TbCircleLetterC } from "react-icons/tb";
-import { FaGitlab } from "react-icons/fa";
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
+import { SiTailwindcss, SiExpress, SiFirebase, SiVisualstudiocode, SiGithub, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit, SiRedis, SiPostman, SiSwagger } from 'react-icons/si';
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { FaGitlab, FaServer } from "react-icons/fa";
+import { TbApi } from "react-icons/tb";
+
+const skillGroups = [
+    {
+        category: "Backend",
+        skills: [
+            { name: 'C#',               icon: SiCsharp },
+            { name: '.NET',             icon: SiDotnet },
+            { name: 'ASP.NET Core',     icon: SiDotnet },
+            { name: 'ASP.NET MVC',      icon: SiDotnet },
+            { name: 'ASP.NET Web API',  icon: TbApi },
+            { name: 'REST API',         icon: TbApi },
+            { name: 'Node.js',          icon: DiNodejsSmall },
+            { name: 'Express.js',       icon: SiExpress },
+        ],
+    },
+    {
+        category: "Frontend",
+        skills: [
+            { name: 'HTML',         icon: DiHtml5 },
+            { name: 'CSS',          icon: DiCss3 },
+            { name: 'JavaScript',   icon: DiJavascript1 },
+            { name: 'React',        icon: DiReact },
+            { name: 'jQuery',       icon: DiJqueryLogo },
+            { name: 'Tailwind CSS', icon: SiTailwindcss },
+            { name: 'Bootstrap',    icon: DiBootstrap },
+            { name: 'DaisyUI',      icon: SiDaisyui },
+        ],
+    },
+    {
+        category: "Databases",
+        skills: [
+            { name: 'SQL Server', icon: DiMsqlServer },
+            { name: 'MySQL',      icon: SiMysql },
+            { name: 'MongoDB',    icon: DiMongodb },
+            { name: 'Redis',      icon: SiRedis },
+        ],
+    },
+    {
+        category: "Tools & DevOps",
+        skills: [
+            { name: 'Visual Studio', icon: BiLogoVisualStudio },
+            { name: 'VS Code',       icon: SiVisualstudiocode },
+            { name: 'Git',           icon: SiGit },
+            { name: 'GitHub',        icon: SiGithub },
+            { name: 'GitLab',        icon: FaGitlab },
+            { name: 'Postman',       icon: SiPostman },
+            { name: 'Swagger',       icon: SiSwagger },
+            { name: 'IIS',           icon: FaServer },
+            { name: 'Firebase',      icon: SiFirebase },
+            { name: 'Render',        icon: SiRender },
+        ],
+    },
+];
 
 const Skills = () => {
-    const skills = [
-        { name: 'C#', icon: SiCsharp },
-        { name: '.NET', icon: SiDotnet },
-        { name: 'ASP.NET MVC', icon: SiDotnet },
-        { name: 'ASP.NET Core', icon: SiDotnet },
-        { name: 'ASP.NET Web API', icon: DiCodeBadge },
-        { name: 'REST API', icon: DiCodeBadge },
-        { name: 'HTML', icon: DiHtml5 },
-        { name: 'CSS', icon: DiCss3 },
-        { name: 'JavaScript', icon: DiJavascript1 },
-        { name: 'jQuery', icon: DiJqueryLogo },
-        { name: 'ES6', icon: DiJavascript1 },
-        { name: 'React', icon: DiReact },
-        { name: 'Node.js', icon: DiNodejsSmall },
-        { name: 'MongoDB', icon: DiMongodb },
-        { name: 'Express.js', icon: SiExpress },
-        { name: 'MSSQL', icon: DiMsqlServer },
-        { name: 'MySQL', icon: SiMysql },
-        { name: 'Bootstrap', icon: DiBootstrap },
-        { name: 'Tailwind CSS', icon: SiTailwindcss },
-        { name: 'DaisyUI', icon: SiDaisyui },
-        { name: 'C', icon: TbCircleLetterC },
-        { name: 'C++', icon: BiLogoCPlusPlus },
-        // { name: 'Java', icon: DiJava },
-        { name: 'Visual Studio', icon: BiLogoVisualStudio },
-        { name: 'VS Code', icon: SiVisualstudiocode },
-        { name: 'Git', icon: SiGit },
-        { name: 'GitHub', icon: SiGithub },
-        { name: 'GitLab', icon: FaGitlab },
-        { name: 'Chrome DevTools', icon: SiGooglechrome },
-        { name: 'Render', icon: SiRender },
-        { name: 'Vercel', icon: SiVercel },
-        { name: 'Netlify', icon: SiNetlify },
-        { name: 'Firebase', icon: SiFirebase },
-        { name: 'Figma', icon: SiFigma },
-        { name: 'MERN', icon: DiMongodb },
-        { name: 'Data Structures & Algorithms', icon: DiCodeBadge },
-        { name: 'OOP', icon: DiCode },
-    ];
-
     return (
-        <div id='Skills' className="my-8 px-4">
-            <h2 className="text-center text-3xl font-bold mb-8 text-gray-800">My Skills</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                {skills.map((skill, index) => (
-                    <div key={index} className="flex flex-col items-center bg-white rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105 hover:shadow-xl">
-                        <skill.icon className="text-5xl mb-3 text-blue-600" />
-                        <p className="text-center text-lg font-semibold text-gray-700">{skill.name}</p>
+        <div id="Skills" className="py-12">
+            <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">Skills</h2>
+            <div className="space-y-8">
+                {skillGroups.map((group) => (
+                    <div key={group.category}>
+                        <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 pl-1">
+                            {group.category}
+                        </h3>
+                        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+                            {group.skills.map((skill) => (
+                                <div
+                                    key={skill.name}
+                                    className="flex flex-col items-center bg-white rounded-lg shadow-sm border border-gray-100 p-3 hover:shadow-md hover:border-blue-200 transition-all duration-200"
+                                >
+                                    <skill.icon className="text-3xl mb-1.5 text-blue-600" />
+                                    <p className="text-center text-xs font-medium text-gray-700 leading-tight">{skill.name}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 ))}
             </div>
