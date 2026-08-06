@@ -1,9 +1,9 @@
 import emailjs from "emailjs-com";
 import { RiGithubFill, RiLinkedinBoxFill, RiSendPlaneFill, RiMediumFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
-import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Swal from 'sweetalert2';
-import { SOCIAL_LINKS, CONTACT_EMAIL, LOCATION } from '../constants/links';
+import { SOCIAL_LINKS, CONTACT_EMAIL, LOCATION, PHONE, WHATSAPP_URL } from '../constants/links';
 
 const Contact = () => {
     const handleSubmit = (e) => {
@@ -48,6 +48,16 @@ const Contact = () => {
                             className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                             <FaEnvelope className="text-xl" />
                             <span>{CONTACT_EMAIL}</span>
+                        </a>
+                        <a href={`tel:${PHONE.replace(/\s/g, '')}`}
+                            className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
+                            <FaPhoneAlt className="text-xl" />
+                            <span>{PHONE}</span>
+                        </a>
+                        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer"
+                            className="flex items-center space-x-3 text-gray-300 hover:text-green-400 transition-colors">
+                            <FaWhatsapp className="text-xl" />
+                            <span>WhatsApp</span>
                         </a>
                         <div className="flex items-center space-x-3 text-gray-300">
                             <FaMapMarkerAlt className="text-xl" />
