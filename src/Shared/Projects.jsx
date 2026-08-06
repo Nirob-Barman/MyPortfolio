@@ -1,80 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
+import { projectsData } from '../data/projectsData';
+import SectionHeading from '../components/SectionHeading';
+import AnimatedSection from '../components/AnimatedSection';
 
-const projectsData = [
-    {
-        name: "CarShop",
-        subtitle: "Drive Your Dream",
-        features: [
-            // "Clean Architecture (Domain → Application → Infrastructure → Web) with Unit of Work, Generic Repository, Strategy Pattern for payment processors, and Result<T> for consistent service responses.",
-            // "Full admin panel with revenue analytics, audit logs, rate-limited auth (10 req/min/IP), Redis caching, real-time stock alerts, and bulk CSV car import.",
-            // "Admin panel with revenue analytics, audit logs, rate-limited auth, Redis caching, real-time stock alerts, and bulk CSV car import.",
-            // "Two-tier homepage loading via IntersectionObserver — critical content renders instantly; secondary sections lazy-load with skeleton placeholders. Open Graph + Twitter Card meta tags on all car detail pages.",
-            // "Wishlist, recently viewed cars (cookie-based, 30-day), promo codes with discount caps, test drive bookings, and stock alerts with email + in-app notifications via 60-second polling.",
-            // "Multi-gateway checkout — Stripe, SSLCommerz, BKash, SurjoPay — with gateway credentials encrypted at rest via ASP.NET Data Protection and 30-min order auto-expiry with stock restoration.",
-            // "Multi-gateway checkout with gateway credentials encrypted at rest via ASP.NET Data Protection and 30-min order auto-expiry with stock restoration.",
-            "Built a full-featured car marketplace with user authentication, account management, and role-based access.",
-            "Developed advanced car browsing and filtering with detailed listings, reviews, wishlist, and personalization.",
-            "Implemented order workflow with real-time stock, payment integration, and order lifecycle management.",
-        ],
-        links: {
-            website: "https://carshop.runasp.net/",
-            github: "https://github.com/Nirob-Barman/CarShop",
-        },
-        tags: ["ASP.NET Core 8", "C#", "EF Core", "SQL Server", "Clean Architecture", "Redis", "Stripe"],                
-        images: [
-            "https://i.ibb.co.com/R49RG73P/Screenshot-1.png",
-            "https://i.ibb.co.com/8DV1r2Hz/Screenshot-3.png",
-            "https://i.ibb.co.com/6c4c1Nj4/Screenshot-2.png",
-        ],
-        gradient: "from-blue-600 to-indigo-700",
-        // gradient: "null",
-    },
-    {
-        name: "EliteAcademy",
-        subtitle: "Learning Hub",
-        features: [
-            // "Full stack web development supporting admin, instructor, and student roles.",
-            "Built a role-based learning platform (Admin, Instructor, Student) with secure authorization, approval workflows, and seamless role transitions",
-            "Admin manages course approval, feedback, and empowers instructors administratively.",
-            "Designed admin analytics and reporting dashboards with revenue insights (monthly, per-class, per-instructor) and CSV export for business intelligence.",
-            // "Followed clean separation of concerns (MVC + Service Layer pattern) to maintain testability and scalability.",
-            // "Students have access to enroll in and view their selected and enrolled classes.",
-        ],
-        links: {
-            website: "https://eliteacademy.runasp.net/",
-            github: "https://github.com/Nirob-Barman/EliteAcademy",
-        },
-        tags: ["ASP.NET Core MVC", "C#", "EF Core", "SQL Server", "Identity", "Bootstrap"],
-        images: [
-            "https://i.ibb.co.com/3YG1Qq80/Screenshot-1.png",
-            "https://i.ibb.co.com/XxZqhGfZ/Screenshot-2.png",
-            "https://i.ibb.co.com/Ld1znvPr/Screenshot-3.png",
-        ],
-        gradient: null,
-    },
-    {
-        name: "Grow Green",
-        subtitle: "Gardening E-Commerce",
-        features: [
-            "Role-based access control, allowing administrators to manage roles for users.",
-            "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
-            "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue.",
-        ],
-        links: {
-            website: "https://grow-green-aa1e1.web.app/",
-            github: "https://github.com/Nirob-Barman/Grow-Green",
-        },
-        tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe"],
-        images: [
-            "https://i.ibb.co/2h8CynF/image.png",
-            "https://i.ibb.co/4dtjQm2/image.png",
-            "https://i.ibb.co/pKXj4PF/image.png",
-        ],
-        gradient: null,
-    },
-];
 
 const Thumbnail = ({ project }) => {
     const [current, setCurrent] = useState(0);
@@ -193,6 +123,13 @@ const ProjectCard = ({ project }) => {
                         </span>
                     ))}
                 </div>
+
+                <Link
+                    to={`/projects/${project.slug}`}
+                    className="mt-5 flex items-center justify-center gap-2 text-sm font-semibold text-blue-600 border border-blue-200 rounded-lg py-2.5 hover:bg-blue-50 transition-colors duration-200"
+                >
+                    View Details <FaArrowRight size={12} />
+                </Link>
             </div>
         </div>
     );
@@ -201,16 +138,12 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
     return (
         <div id="Projects" className="py-12">
-            <h2 className="text-center text-3xl font-bold mb-2 text-gray-800">Projects</h2>
-            <p className="text-center text-gray-500 mb-8">
-                {/* View all projects{" "}
-                <Link to="/projects" className="text-blue-500 hover:text-blue-700 font-medium">
-                    here
-                </Link> */}
-            </p>
+            <SectionHeading title="Projects" subtitle="A few things I've built end-to-end — from data model to deployment." />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {projectsData.map((project, index) => (
-                    <ProjectCard key={index} project={project} />
+                {projectsData.map((project) => (
+                    <AnimatedSection key={project.slug}>
+                        <ProjectCard project={project} />
+                    </AnimatedSection>
                 ))}
             </div>
         </div>

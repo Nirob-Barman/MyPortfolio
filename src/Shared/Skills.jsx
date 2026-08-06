@@ -1,8 +1,10 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb, DiBootstrap, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
-import { SiTailwindcss, SiExpress, SiFirebase, SiVisualstudiocode, SiGithub, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit, SiRedis, SiPostman, SiSwagger } from 'react-icons/si';
+import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiBootstrap, DiMsqlServer, DiJqueryLogo } from 'react-icons/di';
+import { SiTailwindcss, SiExpress, SiFirebase, SiVisualstudiocode, SiGithub, SiRender, SiCsharp, SiDotnet, SiMysql, SiDaisyui, SiGit, SiRedis, SiPostman, SiSwagger, SiDocker } from 'react-icons/si';
 import { BiLogoVisualStudio } from "react-icons/bi";
-import { FaGitlab, FaServer } from "react-icons/fa";
-import { TbApi } from "react-icons/tb";
+import { FaGitlab, FaServer, FaCode } from "react-icons/fa";
+import { TbApi, TbDatabaseCog } from "react-icons/tb";
+import SectionHeading from '../components/SectionHeading';
+import AnimatedSection from '../components/AnimatedSection';
 
 const skillGroups = [
     {
@@ -13,6 +15,8 @@ const skillGroups = [
             { name: 'ASP.NET Core',     icon: SiDotnet },
             { name: 'ASP.NET MVC',      icon: SiDotnet },
             { name: 'ASP.NET Web API',  icon: TbApi },
+            { name: 'Entity Framework Core', icon: TbDatabaseCog },
+            { name: 'LINQ',             icon: FaCode },
             { name: 'REST API',         icon: TbApi },
             { name: 'Node.js',          icon: DiNodejsSmall },
             { name: 'Express.js',       icon: SiExpress },
@@ -35,8 +39,9 @@ const skillGroups = [
         category: "Databases",
         skills: [
             { name: 'SQL Server', icon: DiMsqlServer },
+            // { name: 'PostgreSQL', icon: SiPostgresql },
             { name: 'MySQL',      icon: SiMysql },
-            { name: 'MongoDB',    icon: DiMongodb },
+            // { name: 'MongoDB',    icon: DiMongodb },
             { name: 'Redis',      icon: SiRedis },
         ],
     },
@@ -48,6 +53,7 @@ const skillGroups = [
             { name: 'Git',           icon: SiGit },
             { name: 'GitHub',        icon: SiGithub },
             { name: 'GitLab',        icon: FaGitlab },
+            { name: 'Docker',        icon: SiDocker },
             { name: 'Postman',       icon: SiPostman },
             { name: 'Swagger',       icon: SiSwagger },
             { name: 'IIS',           icon: FaServer },
@@ -60,10 +66,10 @@ const skillGroups = [
 const Skills = () => {
     return (
         <div id="Skills" className="py-12">
-            <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">Skills</h2>
+            <SectionHeading title="Skills" subtitle="Technologies I use to design, build, and ship backend-driven applications." />
             <div className="space-y-8">
                 {skillGroups.map((group) => (
-                    <div key={group.category}>
+                    <AnimatedSection key={group.category}>
                         <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4 pl-1">
                             {group.category}
                         </h3>
@@ -71,14 +77,14 @@ const Skills = () => {
                             {group.skills.map((skill) => (
                                 <div
                                     key={skill.name}
-                                    className="flex flex-col items-center bg-white rounded-lg shadow-sm border border-gray-100 p-3 hover:shadow-md hover:border-blue-200 transition-all duration-200"
+                                    className="group flex flex-col items-center bg-white rounded-lg shadow-sm border border-gray-100 p-3 hover:shadow-lg hover:border-blue-200 hover:-translate-y-1 transition-all duration-200"
                                 >
-                                    <skill.icon className="text-3xl mb-1.5 text-blue-600" />
+                                    <skill.icon className="text-3xl mb-1.5 text-blue-600 transition-transform duration-200 group-hover:scale-110" />
                                     <p className="text-center text-xs font-medium text-gray-700 leading-tight">{skill.name}</p>
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </AnimatedSection>
                 ))}
             </div>
         </div>

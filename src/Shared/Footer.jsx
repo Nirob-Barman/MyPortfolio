@@ -1,4 +1,6 @@
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
+import { SOCIAL_LINKS } from '../constants/links';
 
 const Footer = () => {
     return (
@@ -7,15 +9,19 @@ const Footer = () => {
                 <p className="text-lg font-semibold tracking-wide">Nirob Barman</p>
                 <p className="text-sm text-gray-400">.NET Developer · ASP.NET Core · Clean Architecture</p>
                 <div className="flex gap-5">
-                    <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition-colors" title="GitHub">
                         <FaGithub size={20} />
                     </a>
-                    <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer"
                         className="text-gray-400 hover:text-blue-400 transition-colors" title="LinkedIn">
                         <FaLinkedin size={20} />
                     </a>
-                    <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.leetcode} target="_blank" rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-orange-500 transition-colors" title="LeetCode">
+                        <SiLeetcode size={20} />
+                    </a>
+                    <a href={SOCIAL_LINKS.medium} target="_blank" rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white transition-colors" title="Medium">
                         <FaMedium size={20} />
                     </a>

@@ -1,12 +1,13 @@
 import { getExperienceLabel } from '../utils/experience';
+import AnimatedSection from '../components/AnimatedSection';
 
 const About = () => {
     return (
         <div id="About" className="py-12">
-            <section className="bg-white rounded-lg shadow-lg p-8">
+            <AnimatedSection className="bg-white rounded-lg shadow-lg p-8">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
                 <p className="mb-4 text-gray-700 leading-relaxed">
-                    I'm a <span className="font-semibold text-blue-600">.NET developer</span> with{' '}
+                    I&rsquo;m a <span className="font-semibold text-blue-600">.NET developer</span> with{' '}
                     <span className="font-semibold">{getExperienceLabel()}</span> of professional experience
                     specializing in <span className="font-semibold">ASP.NET Core Web APIs</span>, <span className="font-semibold">ASP.NET MVC</span>,
                     and <span className="font-semibold">Clean Architecture</span>. I currently work as an
@@ -30,7 +31,7 @@ const About = () => {
                     I hold a <span className="font-semibold">B.Sc in Computer Science & Engineering</span> (CGPA 3.54 / 4.00)
                     and have a background in competitive programming across LeetCode, Codeforces, and HackerRank.
                 </p>
-            </section>
+            </AnimatedSection>
         </div>
     );
 };

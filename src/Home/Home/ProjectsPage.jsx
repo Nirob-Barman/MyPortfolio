@@ -1,148 +1,78 @@
-import { useState, useEffect } from "react";
-// import { projectsData } from "../../data/projectsData";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+import { projectsData } from "../../data/projectsData";
 
 const ProjectsPage = () => {
-    const [projects, setProjects] = useState([]);
-    const [selectedCategories, setSelectedCategories] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [selectedTags, setSelectedTags] = useState([]);
 
     useEffect(() => {
-        // Scroll to the top when the page loads
         window.scrollTo(0, 0);
-
-        const fetchProjects = async () => {
-            try {
-                const response = await fetch("https://my-portfolio-api-lake.vercel.app/projects");
-                if (!response.ok) {
-                    throw new Error("Failed to fetch projects");
-                }
-                const data = await response.json();
-                setProjects(data);
-            } catch (err) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchProjects();
-
     }, []);
 
-    // Extract unique categories from all projects
-    const allCategories = Array.from(
-        new Set(projects.flatMap(project => project.categories))
-    );
+    const allTags = Array.from(new Set(projectsData.flatMap((project) => project.tags)));
 
-    // Handle category filter toggle
-    const handleCategoryToggle = (category) => {
-        setSelectedCategories(prevSelected =>
-            prevSelected.includes(category)
-                ? prevSelected.filter(cat => cat !== category)
-                : [...prevSelected, category]
+    const handleTagToggle = (tag) => {
+        setSelectedTags((prev) =>
+            prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
         );
     };
 
-    // Filter projects based on selected categories
-    const filteredProjects = projects.filter(project =>
-        selectedCategories.length === 0 ||
-        selectedCategories.some(cat => project.categories.includes(cat))
+    const filteredProjects = projectsData.filter(
+        (project) =>
+            selectedTags.length === 0 || selectedTags.some((tag) => project.tags.includes(tag))
     );
 
     return (
         <div className="bg-white bg-opacity-90 rounded-2xl shadow-2xl p-8 md:p-16 max-w-6xl mx-auto">
             <div className="text-center mb-8">
-                <h1 className="text-3xl font-bold mb-4">Projects</h1>
-                <p className="text-gray-900 text-lg">Filter by your favorite technologies</p>
+                <h1 className="text-3xl font-bold mb-4 text-gray-800">All Projects</h1>
+                <p className="text-gray-500 text-lg">Filter by technology</p>
             </div>
 
-            {loading && (
-                <div className="text-center text-gray-600 text-lg">Loading projects...</div>
-            )}
-
-            {error && (
-                <div className="text-center text-red-500 text-lg mb-8">
-                    Error: {error}
-                </div>
-            )}
-
-            {/* Category Filters */}
-            <div className="flex flex-wrap gap-3 mb-8 justify-center">
-                {allCategories.map(category => (
+            {/* Tag Filters */}
+            <div className="flex flex-wrap gap-3 mb-10 justify-center">
+                {allTags.map((tag) => (
                     <button
-                        key={category}
-                        onClick={() => handleCategoryToggle(category)}
-                        className={`px-4 py-2 rounded-full border transition-all duration-300 shadow-sm 
-                            ${selectedCategories.includes(category) ?
-                                "bg-blue-500 text-white font-semibold border-blue-500" :
-                                "bg-gray-200 text-gray-700 border-gray-300 hover:bg-white"}
-                        `}
+                        key={tag}
+                        onClick={() => handleTagToggle(tag)}
+                        className={`px-4 py-2 rounded-full border text-sm transition-all duration-200 ${
+                            selectedTags.includes(tag)
+                                ? "bg-blue-600 text-white font-semibold border-blue-600"
+                                : "bg-gray-100 text-gray-700 border-gray-200 hover:bg-white"
+                        }`}
                     >
-                        {category}
+                        {tag}
                     </button>
                 ))}
             </div>
 
             {/* Project Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredProjects.map(project => (
-                    <div key={project.name} className="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg transition-all">
-                        <h2 className="text-xl font-semibold mb-3">{project.name}</h2>
-                        <ul className="text-gray-700 mb-4 h-40 overflow-auto">
-                            {project.features.map((feature, index) => (
-                                <li key={index} className="flex items-center">
-                                    <span className="mr-2 text-green-500">&#10003;</span> {feature}
-                                </li>
+                {filteredProjects.map((project) => (
+                    <div
+                        key={project.slug}
+                        className="bg-white p-5 rounded-2xl shadow-md border border-gray-100 hover:shadow-lg transition-all flex flex-col"
+                    >
+                        <h2 className="text-lg font-bold text-gray-800">{project.name}</h2>
+                        <p className="text-xs text-blue-500 font-medium mb-3">{project.subtitle}</p>
+                        <p className="text-sm text-gray-600 flex-1">{project.overview}</p>
+                        <div className="flex flex-wrap gap-1.5 mt-4">
+                            {project.tags.map((tag) => (
+                                <span
+                                    key={tag}
+                                    className="text-xs font-medium px-2 py-0.5 rounded-full bg-slate-50 text-slate-600 border border-slate-200"
+                                >
+                                    {tag}
+                                </span>
                             ))}
-                        </ul>
-                        <div className="flex gap-3">
-
-                            {project.links.website && (
-                                <a
-                                    href={project.links.website}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-full"
-                                >
-                                    Website
-                                </a>
-                            )}
-
-                            {project.links.repository && (
-                                <a
-                                    href={project.links.repository}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-full"
-                                >
-                                    Repository
-                                </a>
-                            )}
-
-                            {project.links.server && (
-                                <a
-                                    href={project.links.server}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-full"
-                                >
-                                    Server
-                                </a>
-                            )}
-
-                            {project.links.client && (
-                                <a
-                                    href={project.links.client}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-full"
-                                >
-                                    Client
-                                </a>
-                            )}
-
                         </div>
+                        <Link
+                            to={`/projects/${project.slug}`}
+                            className="mt-5 flex items-center justify-center gap-2 text-sm font-semibold text-blue-600 border border-blue-200 rounded-lg py-2.5 hover:bg-blue-50 transition-colors duration-200"
+                        >
+                            View Details <FaArrowRight size={12} />
+                        </Link>
                     </div>
                 ))}
             </div>

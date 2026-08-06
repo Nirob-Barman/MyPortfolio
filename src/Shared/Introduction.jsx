@@ -2,11 +2,13 @@ import { motion } from 'framer-motion';
 import profileImage from '../../public/profile.jpg';
 import Typewriter from 'typewriter-effect';
 import { FaGithub, FaLinkedin, FaMedium, FaDownload } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import { getExperienceLabel } from '../utils/experience';
+import { SOCIAL_LINKS, RESUME_URL } from '../constants/links';
 
 const Introduction = () => {
     const handleDownload = () => {
-        window.open('https://drive.google.com/u/1/uc?id=1KV9fUQ_md5Z9Advlw1OoDSWR-1H218GZ&export=download');
+        window.open(RESUME_URL);
     };
 
     return (
@@ -23,9 +25,13 @@ const Introduction = () => {
 
                 <div className="mt-6">
                     <h1 className="text-3xl font-bold mb-2 text-gray-800">
-                        Hi, I'm <span className="text-blue-500">Nirob Barman</span>
+                        Hi, I&rsquo;m <span className="text-blue-500">Nirob Barman</span>
                     </h1>
-                    <h2 className="text-xl text-gray-600 font-semibold h-8">
+                    <p className="text-base font-semibold text-gray-700 mt-1">
+                        .NET Developer <span className="text-gray-400 mx-1">|</span> Backend Developer{' '}
+                        <span className="text-gray-400 mx-1">|</span> Software Engineer
+                    </p>
+                    <h2 className="text-xl text-gray-600 font-semibold h-8 mt-1">
                         <Typewriter
                             options={{
                                 strings: ["Software Engineer", ".NET Developer", "ASP.NET Core Engineer", "Backend Developer", "Full-Stack .NET Developer"],
@@ -37,9 +43,11 @@ const Introduction = () => {
                 </div>
 
                 <p className="text-base text-gray-600 mt-5 leading-relaxed">
-                    <span className="font-semibold text-blue-500">.NET developer</span> with{' '}
+                    I am a <span className="font-semibold text-blue-500">Software Engineer</span> with{' '}
                     <span className="font-semibold text-gray-800">{getExperienceLabel()}</span> of professional
-                    experience building scalable multi-tenant APIs, microservices, and full-stack web applications.
+                    experience specializing in <span className="font-semibold">ASP.NET Core</span>,{' '}
+                    <span className="font-semibold">REST APIs</span>, <span className="font-semibold">SQL Server</span>,
+                    and scalable, multi-tenant backend solutions.
                 </p>
 
                 {/* CTA Buttons */}
@@ -61,15 +69,19 @@ const Introduction = () => {
 
                 {/* Social Icons */}
                 <div className="flex justify-center gap-5 mt-6">
-                    <a href="https://github.com/Nirob-Barman" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer"
                         className="text-gray-500 hover:text-gray-800 transition-colors" title="GitHub">
                         <FaGithub size={22} />
                     </a>
-                    <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer"
                         className="text-gray-500 hover:text-blue-600 transition-colors" title="LinkedIn">
                         <FaLinkedin size={22} />
                     </a>
-                    <a href="https://medium.com/@nirob-barman" target="_blank" rel="noopener noreferrer"
+                    <a href={SOCIAL_LINKS.leetcode} target="_blank" rel="noopener noreferrer"
+                        className="text-gray-500 hover:text-orange-500 transition-colors" title="LeetCode">
+                        <SiLeetcode size={22} />
+                    </a>
+                    <a href={SOCIAL_LINKS.medium} target="_blank" rel="noopener noreferrer"
                         className="text-gray-500 hover:text-gray-800 transition-colors" title="Medium">
                         <FaMedium size={22} />
                     </a>

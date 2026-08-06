@@ -1,18 +1,23 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaDownload, FaHome } from 'react-icons/fa';
+import { RESUME_URL } from '../constants/links';
 
 const NAV_LINKS = [
-    { label: 'About',          href: '#About',          id: 'About'          },
-    { label: 'Experience',     href: '#Experience',      id: 'Experience'      },
-    { label: 'Projects',       href: '#Projects',        id: 'Projects'        },
-    { label: 'Skills',         href: '#Skills',          id: 'Skills'          },
-    { label: 'Education',      href: '#Education',       id: 'Education'       },
-    { label: 'Certifications', href: '#Certifications',  id: 'Certifications'  },
-    { label: 'Contact',        href: '#Contacts',        id: 'Contacts'        },
+    { label: 'Home',       href: '#Introduction',    id: 'Introduction'    },
+    { label: 'About',      href: '#About',            id: 'About'          },
+    { label: 'Skills',     href: '#Skills',           id: 'Skills'         },
+    { label: 'Education',  href: '#Education',        id: 'Education'      },
+    { label: 'Experience', href: '#Experience',       id: 'Experience'     },
+    { label: 'Projects',   href: '#Projects',         id: 'Projects'       },
+    { label: 'Contact',    href: '#Contacts',         id: 'Contacts'       },
 ];
 
-const RESUME_URL = 'https://drive.google.com/u/1/uc?id=1KV9fUQ_md5Z9Advlw1OoDSWR-1H218GZ&export=download';
+// Bonus sections — real content, kept off the primary nav to match the required link set
+const SECONDARY_LINKS = [
+    { label: 'Certifications', href: '#Certifications',    id: 'Certifications'    },
+    { label: 'Problem Solving', href: '#ProblemSolving',   id: 'ProblemSolving'    },
+];
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen]     = useState(false);
@@ -34,7 +39,7 @@ const NavBar = () => {
     // Active section via IntersectionObserver
     useEffect(() => {
         if (!isHome) return;
-        const ids = NAV_LINKS.map(l => l.id);
+        const ids = [...NAV_LINKS, ...SECONDARY_LINKS].map(l => l.id);
         const elements = ids.map(id => document.getElementById(id)).filter(Boolean);
 
         const observer = new IntersectionObserver(
@@ -91,12 +96,19 @@ const NavBar = () => {
                                     {link.label}
                                 </a>
                             ))}
-                            {/* <Link
-                                to="/projects"
-                                className="pb-0.5 border-b-2 border-transparent text-gray-300 hover:text-white transition-colors duration-200"
-                            >
-                                All Projects
-                            </Link> */}
+                            <span className="hidden lg:flex items-center gap-5 text-xs text-gray-500">
+                                {SECONDARY_LINKS.map(link => (
+                                    <a
+                                        key={link.label}
+                                        href={link.href}
+                                        className={`hover:text-white transition-colors duration-200 ${
+                                            activeSection === link.id ? 'text-blue-400' : ''
+                                        }`}
+                                    >
+                                        {link.label}
+                                    </a>
+                                ))}
+                            </span>
                             <Link
                                 to="/blogs"
                                 className="pb-0.5 border-b-2 border-transparent text-gray-300 hover:text-white transition-colors duration-200"
@@ -153,6 +165,18 @@ const NavBar = () => {
                             onClick={closeMenu}
                             className={`py-2.5 text-sm font-medium border-b border-gray-700 transition-colors ${
                                 activeSection === link.id ? 'text-blue-400' : 'text-gray-300 hover:text-white'
+                            }`}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
+                    {isHome && SECONDARY_LINKS.map(link => (
+                        <a
+                            key={link.label}
+                            href={link.href}
+                            onClick={closeMenu}
+                            className={`py-2.5 text-sm font-medium border-b border-gray-700 transition-colors ${
+                                activeSection === link.id ? 'text-blue-400' : 'text-gray-400 hover:text-white'
                             }`}
                         >
                             {link.label}

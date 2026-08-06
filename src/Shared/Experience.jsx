@@ -1,8 +1,11 @@
+import SectionHeading from '../components/SectionHeading';
+import AnimatedSection from '../components/AnimatedSection';
+
 const experiences = [
     {
         company: "SoftifyBD Limited",
         role: "IMSS Specialist Engineer",
-        period: "October 2024 – Present",
+        period: "October 2024 – July 2026",
         type: "Full-time",
         project: "ISP Digital — ISP Management & Billing Software (SaaS)",
         bullets: [
@@ -35,10 +38,10 @@ const experiences = [
 const Experience = () => {
     return (
         <div id="Experience" className="py-12">
-            <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">Work Experience</h2>
+            <SectionHeading title="Work Experience" />
             <div className="relative border-l-2 border-blue-500 ml-4 md:ml-8 space-y-10">
                 {experiences.map((exp, index) => (
-                    <div key={index} className="relative pl-8">
+                    <AnimatedSection key={index} className="relative pl-8">
                         <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow" />
                         <div className="bg-white rounded-lg shadow-lg p-6">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
@@ -68,7 +71,7 @@ const Experience = () => {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </AnimatedSection>
                 ))}
             </div>
         </div>

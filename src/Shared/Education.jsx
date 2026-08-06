@@ -1,3 +1,6 @@
+import SectionHeading from '../components/SectionHeading';
+import AnimatedSection from '../components/AnimatedSection';
+
 const educationData = [
     {
         degree: "B.Sc in Computer Science & Engineering",
@@ -6,6 +9,7 @@ const educationData = [
         period: "2018 – 2023",
         result: "CGPA 3.54 / 4.00",
         level: "Undergraduate",
+        details: "Relevant coursework: Data Structures & Algorithms, Database Systems, Object-Oriented Programming, Software Engineering, Computer Networks.",
     },
     {
         degree: "Higher Secondary Certificate (HSC)",
@@ -28,10 +32,10 @@ const educationData = [
 const Education = () => {
     return (
         <div id="Education" className="py-12">
-            <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">Education</h2>
+            <SectionHeading title="Education" />
             <div className="relative border-l-2 border-blue-500 ml-4 md:ml-8 space-y-8">
                 {educationData.map((edu, index) => (
-                    <div key={index} className="relative pl-8">
+                    <AnimatedSection key={index} className="relative pl-8">
                         <span className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow" />
                         <div className="bg-white rounded-lg shadow-lg p-6">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
@@ -47,8 +51,11 @@ const Education = () => {
                             <span className="inline-block text-sm font-semibold text-green-600 bg-green-50 border border-green-200 px-3 py-0.5 rounded-full">
                                 {edu.result}
                             </span>
+                            {edu.details && (
+                                <p className="text-sm text-gray-500 mt-3 leading-relaxed">{edu.details}</p>
+                            )}
                         </div>
-                    </div>
+                    </AnimatedSection>
                 ))}
             </div>
         </div>

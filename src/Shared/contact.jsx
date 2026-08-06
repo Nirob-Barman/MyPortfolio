@@ -1,6 +1,9 @@
 import emailjs from "emailjs-com";
 import { RiGithubFill, RiLinkedinBoxFill, RiSendPlaneFill, RiMediumFill } from "react-icons/ri";
+import { SiLeetcode } from "react-icons/si";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Swal from 'sweetalert2';
+import { SOCIAL_LINKS, CONTACT_EMAIL, LOCATION } from '../constants/links';
 
 const Contact = () => {
     const handleSubmit = (e) => {
@@ -39,18 +42,36 @@ const Contact = () => {
                         Open to new opportunities, collaborations, or just a technical conversation.
                         Feel free to reach out through this form or connect on my socials.
                     </p>
+
+                    <div className="space-y-3">
+                        <a href={`mailto:${CONTACT_EMAIL}`}
+                            className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
+                            <FaEnvelope className="text-xl" />
+                            <span>{CONTACT_EMAIL}</span>
+                        </a>
+                        <div className="flex items-center space-x-3 text-gray-300">
+                            <FaMapMarkerAlt className="text-xl" />
+                            <span>{LOCATION}</span>
+                        </div>
+                    </div>
+
                     <div className="space-y-4">
-                        <a href="https://github.com/Nirob-Barman" target="_blank" rel="noreferrer"
+                        <a href={SOCIAL_LINKS.github} target="_blank" rel="noreferrer"
                             className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                             <RiGithubFill className="text-2xl" />
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/nirob-barman/" target="_blank" rel="noreferrer"
+                        <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noreferrer"
                             className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                             <RiLinkedinBoxFill className="text-2xl" />
                             <span>LinkedIn</span>
                         </a>
-                        <a href="https://medium.com/@nirob-barman/" target="_blank" rel="noreferrer"
+                        <a href={SOCIAL_LINKS.leetcode} target="_blank" rel="noreferrer"
+                            className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
+                            <SiLeetcode className="text-xl" />
+                            <span>LeetCode</span>
+                        </a>
+                        <a href={SOCIAL_LINKS.medium} target="_blank" rel="noreferrer"
                             className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">
                             <RiMediumFill className="text-2xl" />
                             <span>Medium</span>
