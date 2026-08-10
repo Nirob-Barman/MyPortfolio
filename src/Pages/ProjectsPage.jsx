@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import { projectsData } from "../../data/projectsData";
+import { projectsData } from "../data/projectsData";
 
 const ProjectsPage = () => {
     const [selectedTags, setSelectedTags] = useState([]);

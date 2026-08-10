@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import NavBar from '../Shared/NavBar';
-import Footer from '../Shared/Footer';
+import NavBar from '../Sections/NavBar';
+import Footer from '../Sections/Footer';
 
 const Main = () => {
     // Always start a fresh page load at the top, even if the URL still carries
