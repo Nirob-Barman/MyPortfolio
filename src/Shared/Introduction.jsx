@@ -3,7 +3,6 @@ import profileImage from '../../public/profile.jpg';
 import Typewriter from 'typewriter-effect';
 import { FaGithub, FaLinkedin, FaMedium, FaDownload } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import { getExperienceLabel } from '../utils/experience';
 import { SOCIAL_LINKS, RESUME_URL } from '../constants/links';
 
 const Introduction = () => {
@@ -44,7 +43,7 @@ const Introduction = () => {
 
                 <p className="text-base text-gray-600 mt-5 leading-relaxed">
                     I am a <span className="font-semibold text-blue-500">Software Engineer</span> with{' '}
-                    <span className="font-semibold text-gray-800">{getExperienceLabel()}</span> of professional
+                    <span className="font-semibold text-gray-800">2 years</span> of professional
                     experience specializing in <span className="font-semibold">ASP.NET Core</span>,{' '}
                     <span className="font-semibold">REST APIs</span>, <span className="font-semibold">SQL Server</span>,
                     and scalable, multi-tenant backend solutions.
