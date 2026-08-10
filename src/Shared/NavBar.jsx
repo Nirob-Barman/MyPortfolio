@@ -2,22 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaDownload, FaHome } from 'react-icons/fa';
 import { RESUME_URL } from '../constants/links';
-
-const NAV_LINKS = [
-    { label: 'Home',       href: '#Introduction',    id: 'Introduction'    },
-    { label: 'About',      href: '#About',            id: 'About'          },
-    { label: 'Skills',     href: '#Skills',           id: 'Skills'         },
-    { label: 'Education',  href: '#Education',        id: 'Education'      },
-    { label: 'Experience', href: '#Experience',       id: 'Experience'     },
-    { label: 'Projects',   href: '#Projects',         id: 'Projects'       },
-    { label: 'Contact',    href: '#Contacts',         id: 'Contacts'       },
-];
-
-// Bonus sections — real content, kept off the primary nav to match the required link set
-const SECONDARY_LINKS = [
-    { label: 'Certifications', href: '#Certifications',    id: 'Certifications'    },
-    { label: 'Problem Solving', href: '#ProblemSolving',   id: 'ProblemSolving'    },
-];
+import { NAV_LINKS, SECONDARY_LINKS } from '../data/navLinks';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen]     = useState(false);
