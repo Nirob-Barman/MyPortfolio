@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import profileImage from '../../public/profile.jpg';
 import Typewriter from 'typewriter-effect';
 import { FaGithub, FaLinkedin, FaMedium, FaDownload } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
@@ -14,7 +13,7 @@ const Introduction = () => {
         <div id="Introduction" className="flex justify-center px-4 py-16">
             <div className="max-w-xl mt-12 text-center">
                 <motion.img
-                    src={profileImage}
+                    src="/profile.jpg"
                     alt="Nirob Barman"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
