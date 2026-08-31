@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FaArrowLeft, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaArrowLeft, FaGithub, FaExternalLinkAlt, FaBookOpen } from 'react-icons/fa';
 import { getProjectBySlug } from '../data/projectsData';
 
 const Gallery = ({ project }) => {
@@ -140,6 +140,19 @@ const ProjectDetails = () => {
                         <p className="text-sm text-gray-500">Not deployed publicly.</p>
                     )}
                 </DetailBlock>
+
+                {project.links.api && (
+                    <DetailBlock title="API Documentation">
+                        <a
+                            href={project.links.api}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-green-600 hover:bg-green-700 rounded-lg px-4 py-2 transition-colors"
+                        >
+                            <FaBookOpen size={12} /> View API Documentation
+                        </a>
+                    </DetailBlock>
+                )}            
 
                 <DetailBlock title="GitHub Repository Link">
                     {project.links.github ? (
