@@ -28,3 +28,6 @@ CLAUDE.md
 *.njsproj
 *.sln
 *.sw?
+
+# Firebase
+.firebase/

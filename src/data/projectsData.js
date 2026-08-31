@@ -96,48 +96,156 @@ export const projectsData = [
         ],
         gradient: null,
     },
+    // {
+    //     slug: "grow-green",
+    //     name: "Grow Green",
+    //     subtitle: "Gardening E-Commerce",
+    //     overview:
+    //         "Grow Green is a full-stack gardening e-commerce platform built on the MERN stack with Firebase " +
+    //         "authentication and Stripe payments, featuring role-based access control and admin statistics for " +
+    //         "users, products, orders, and revenue.",
+    //     features: [
+    //         "Role-based access control, allowing administrators to manage roles for users.",
+    //         "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
+    //         "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue.",
+    //     ],
+    //     techStack: {
+    //         Frontend: ["React", "Tailwind CSS"],
+    //         Backend: ["Node.js", "Express.js"],
+    //         Database: ["MongoDB"],
+    //         Other: ["Firebase Auth", "Firebase Hosting"],
+    //         Payments: ["Stripe"],
+    //     },
+    //     dependencies: ["react-router-dom", "firebase", "express", "mongoose", "stripe", "jsonwebtoken"],
+    //     challenges: [
+    //         "Implementing secure role-based access control across a MERN stack without a built-in auth framework like ASP.NET Identity.",
+    //         "Keeping booking state consistent between client and server around Stripe payment confirmation.",
+    //     ],
+    //     futureImprovements: [
+    //         "Add order tracking and status updates for customers.",
+    //         "Introduce pagination and search for the product catalog.",
+    //         "Add automated testing for the Express API.",
+    //     ],
+    //     links: {
+    //         website: "https://grow-green-aa1e1.web.app/",
+    //         github: "https://github.com/Nirob-Barman/Grow-Green",
+    //     },
+    //     tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe"],
+    //     images: [
+    //         "https://i.ibb.co/2h8CynF/image.png",
+    //         "https://i.ibb.co/4dtjQm2/image.png",
+    //         "https://i.ibb.co/pKXj4PF/image.png",
+    //     ],
+    //     gradient: null,
+    // },
     {
-        slug: "grow-green",
-        name: "Grow Green",
-        subtitle: "Gardening E-Commerce",
+        slug: "rooftop-garden",
+        name: "RooftopGarden",
+        subtitle: "Urban Farming Marketplace",
+
         overview:
-            "Grow Green is a full-stack gardening e-commerce platform built on the MERN stack with Firebase " +
-            "authentication and Stripe payments, featuring role-based access control and admin statistics for " +
-            "users, products, orders, and revenue.",
+            "RooftopGarden is a full-stack rooftop gardening management and e-commerce platform " +
+            "built with ASP.NET Core 8 Web API following Clean Architecture. It supports secure " +
+            "authentication, product management, shopping cart, orders, payments, gardening service " +
+            "bookings, and role-based administration.",
+
+        // features: [
+        //     "Implemented secure authentication using ASP.NET Core Identity, JWT access tokens, and refresh-token rotation.",
+        //     "Built product and category management with public catalog browsing, searching, filtering, and pagination.",
+        //     "Implemented shopping cart and order workflows with server-side stock and availability validation.",
+        //     "Added rooftop gardening service booking functionality for customers.",
+        //     "Designed the backend using Clean Architecture with CQRS and MediatR for maintainable application flow.",
+        //     "Implemented role-based access control for customer and administrator operations.",
+        // ],
         features: [
-            "Role-based access control, allowing administrators to manage roles for users.",
-            "Users can create, retrieve, and delete bookings for products and Stripe API for processing payments.",
-            "Admins can retrieve statistics, such as the total number of users, products, orders, and revenue.",
+            "Built a full-stack rooftop gardening and e-commerce platform with secure authentication, product management, shopping cart, orders, and gardening service booking.",
+            "Implemented JWT authentication with ASP.NET Core Identity, refresh-token rotation, and role-based authorization for customer and admin operations.",
+            "Designed the backend using Clean Architecture with CQRS and MediatR, while implementing product catalog, stock validation, order workflows, filtering, searching, and pagination.",
         ],
+
         techStack: {
-            Frontend: ["React", "Tailwind CSS"],
-            Backend: ["Node.js", "Express.js"],
-            Database: ["MongoDB"],
-            Other: ["Firebase Auth", "Firebase Hosting"],
-            Payments: ["Stripe"],
+            Backend: [
+                "C#",
+                "ASP.NET Core 8 Web API",
+                "Entity Framework Core 8",
+                "Clean Architecture",
+                "CQRS",
+                "MediatR",
+            ],
+
+            Database: [
+                "SQL Server",
+            ],
+
+            Auth: [
+                "ASP.NET Core Identity",
+                "JWT Bearer",
+                "Refresh Tokens",
+            ],
+
+            Frontend: [
+                "React",
+                "Tailwind CSS",
+            ],
+
+            Other: [
+                "REST API",
+                "Swagger",
+                "FluentValidation",
+            ],
         },
-        dependencies: ["react-router-dom", "firebase", "express", "mongoose", "stripe", "jsonwebtoken"],
+
+        dependencies: [
+            "ASP.NET Core Identity",
+            "Entity Framework Core",
+            "MediatR",
+            "FluentValidation",
+            "JWT Bearer Authentication",
+            "Swagger / OpenAPI",
+        ],
+
         challenges: [
-            "Implementing secure role-based access control across a MERN stack without a built-in auth framework like ASP.NET Identity.",
-            "Keeping booking state consistent between client and server around Stripe payment confirmation.",
+            "Designing a clean and maintainable architecture by separating domain, application, infrastructure, and API responsibilities.",
+            "Implementing secure JWT authentication with refresh-token rotation and revocation.",
+            // "Maintaining consistent product stock and availability during cart and order operations.",
+            "Designing CQRS commands, queries, and handlers while keeping controllers thin and focused.",
         ],
+
         futureImprovements: [
-            "Add order tracking and status updates for customers.",
-            "Introduce pagination and search for the product catalog.",
-            "Add automated testing for the Express API.",
+            "Add automated integration tests for authentication, orders, and payment workflows.",
+            "Introduce background processing for notifications and other long-running tasks.",
+            "Add advanced admin analytics for sales, products, orders, and gardening services.",
         ],
+
         links: {
-            website: "https://grow-green-aa1e1.web.app/",
-            github: "https://github.com/Nirob-Barman/Grow-Green",
+            website: "https://rooftopgarden-678ee.web.app/",
+            github: "https://github.com/Nirob-Barman/RooftopGarden",
+            api: "https://rooftopgarden.runasp.net/swagger/index.html",
         },
-        tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe"],
-        images: [
-            "https://i.ibb.co/2h8CynF/image.png",
-            "https://i.ibb.co/4dtjQm2/image.png",
-            "https://i.ibb.co/pKXj4PF/image.png",
+
+        tags: [
+            "ASP.NET Core 8",
+            "C#",
+            "Web API",
+            "EF Core",
+            "SQL Server",
+            "Clean Architecture",
+            "CQRS",
+            "MediatR",
+            "JWT",
+            "Identity",
         ],
-        gradient: null,
+
+        images: [
+            // Add your RooftopGarden screenshots here
+            "https://i.ibb.co.com/N2VkgYpY/Screenshot-1.png",
+            "https://i.ibb.co.com/0y8JFWfH/Screenshot-2.png",
+            "https://i.ibb.co.com/qYdyZZbD/Screenshot-3.png",
+        ],
+
+        gradient: "from-green-600 to-emerald-700",
     },
+
 ];
 
 export const getProjectBySlug = (slug) => projectsData.find((p) => p.slug === slug);

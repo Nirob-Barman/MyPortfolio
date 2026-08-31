@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaArrowRight, FaBookOpen } from 'react-icons/fa';
 import { projectsData } from '../data/projectsData';
 import SectionHeading from '../components/SectionHeading';
 import AnimatedSection from '../components/AnimatedSection';
@@ -86,6 +86,17 @@ const ProjectCard = ({ project }) => {
                             title="Live Demo"
                         >
                             <FaExternalLinkAlt size={14} />
+                        </a>
+                    )}
+                    {links.api && (
+                        <a
+                            href={links.api}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 p-2 rounded-full shadow transition"
+                            title="API / Swagger"
+                        >
+                            <FaBookOpen size={16} />
                         </a>
                     )}
                 </div>
