@@ -224,6 +224,10 @@ export const projectsData = [
         },
 
         tags: [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Redux Toolkit",
             "ASP.NET Core 8",
             "C#",
             "Web API",
