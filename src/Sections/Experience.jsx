@@ -20,7 +20,14 @@ const Experience = () => {
                                 <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">{exp.type}</span>
                             </div>
                             {exp.project && (
-                                <p className="text-sm text-gray-500 italic mb-3">Project: {exp.project}</p>
+                                <div className="mb-3">
+                                    <p className="text-sm text-gray-500 italic mb-3">Project: {exp.project}</p>
+                                    {exp.projectNote && (
+                                        <p className="text-xs text-gray-400 mt-1">
+                                            {exp.projectNote}
+                                        </p>
+                                    )}
+                                </div>
                             )}
                             <ul className="mt-3 space-y-2">
                                 {exp.bullets.map((point, i) => (

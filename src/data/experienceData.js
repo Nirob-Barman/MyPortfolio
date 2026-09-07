@@ -5,8 +5,12 @@ export const experienceData = [
         period: "October 2024 – July 2026",
         type: "Full-time",
         project: "ISP Digital — ISP Management & Billing Software (SaaS)",
+        projectNote: "Long-running SaaS product serving ISPs since 2017",
         bullets: [
-            "Part of an 8–10 member development team on ISP Digital, a SaaS product live for 7+ years.",
+            // "Part of an 8–10 member development team on ISP Digital, a SaaS product live for 7+ years.",
+            // "Progressed from Software Engineer Intern to IMSS Specialist Engineer within SoftifyBD Limited, taking on greater responsibility across backend development, APIs, microservices, and production systems.",
+            "Progressed from Software Engineer Intern to IMSS Specialist Engineer within SoftifyBD Limited, taking on greater responsibility across backend development, APIs and production systems.",
+            "Contributed as part of an 8–10 member development team to ISP Digital.",
             "Designed and developed the OLT Integration module in C#/.NET RESTful APIs, enabling real-time ONU monitoring (OLT/Port, Optical Power, MAC, Status, Last Deregister Time/Distance).",
             "Built and managed multi-tenant ASP.NET Core Web APIs and a microservice module supporting multiple client databases, enabling independent deployment and smooth inter-service communication.",
             "Migrated a single MySQL multi-tenant database into separate tenant-specific databases, improving performance, scalability, and data integrity.",
