@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "nirob-barman-19"
+  },
+  "targets": {
+    "nirob-barman-19": {
+      "hosting": {
+        "nirob-barman-19": [
+          "nirob-barman-19"
+        ],
+        "nirob-barman": [
+          "nirob-barman"
+        ]
+      }
+    }
   }
 }
