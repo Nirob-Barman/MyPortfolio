@@ -7,5 +7,5 @@ export const problemSolvingProfiles = [
     { name: "CodeChef", url: "https://www.codechef.com/users/nirob_barman", icon: SiCodechef },
     { name: "UVa Online Judge", url: "https://uhunt.onlinejudge.org/id/966628", icon: FaGlobe },
     { name: "HackerRank", url: "https://www.hackerrank.com/profile/Nirob_Barman", icon: SiHackerrank },
-    { name: "HackerEarth", url: "https://www.hackerearth.com/@nirob.barman", icon: SiHackerearth },
+    { name: "HackerEarth", url: "https://www.hackerearth.com/@nirob-barman", icon: SiHackerearth },
 ];
